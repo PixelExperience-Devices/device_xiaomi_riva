@@ -203,6 +203,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
+# Gestures and Glove mode package
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # GPS
 PRODUCT_PACKAGES += \
     libcurl \
