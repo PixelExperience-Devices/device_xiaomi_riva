@@ -40,6 +40,10 @@ on fs
 
     mkdir /persist/data 0700 system system
     mkdir /persist/bms 0700 root system
+    mkdir /persist/rfs 0770 root system
+    mkdir /persist/hlos_rfs 0770 root system
+    chmod 0770 /persist/rfs
+    chmod 0770 /persist/hlos_rfs
     restorecon_recursive /persist
 
     wait /dev/block/bootdevice/by-name/oem
