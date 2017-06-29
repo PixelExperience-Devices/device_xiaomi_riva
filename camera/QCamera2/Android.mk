@@ -128,6 +128,7 @@ endif
 
 LOCAL_HEADER_LIBRARIES += camera_common_headers
 LOCAL_HEADER_LIBRARIES += display_headers
+LOCAL_HEADER_LIBRARIES += media_plugin_headers
 
 LOCAL_STATIC_LIBRARIES := android.hardware.camera.common@1.0-helper
 
