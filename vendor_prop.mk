@@ -84,6 +84,10 @@ qemu.hw.mainkeys=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
 vendor.display.disable_skip_validate=1
 
+# Property to enable display default color mode
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.display.enable_default_color_mode=1
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.heapgrowthlimit=192m \
