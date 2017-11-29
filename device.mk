@@ -194,6 +194,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    Doze
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8937 \
