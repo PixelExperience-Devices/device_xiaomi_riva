@@ -59,6 +59,9 @@
 #permissions for pta
 /dev/pta                  0660   system     system
 
+# QDSS
+/dev/byte-cntr            0660   system    oem_2902
+
 /dev/radio0               0640   system     system
 /dev/rfcomm0              0660   bluetooth  bluetooth
 /dev/ttyUSB0              0660   bluetooth  bluetooth
