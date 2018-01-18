@@ -153,6 +153,9 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 USE_OPENGL_RENDERER := true
 
+# Exclude serif fonts
+EXCLUDE_SERIF_FONTS := true
+
 # Fast charging support
 HEALTHD_USE_FASTCHG_STATUS := true
 
