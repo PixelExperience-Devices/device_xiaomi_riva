@@ -1076,8 +1076,8 @@
     </path>
 
     <path name="handset-stereo-dmic-ef">
-        <ctl name="DEC1 Volume" value="84" />
-        <ctl name="DEC2 Volume" value="84" />
+        <ctl name="DEC1 Volume" value="72" />
+        <ctl name="DEC2 Volume" value="72" />
         <path name="speaker-dmic-endfire" />
     </path>
 
