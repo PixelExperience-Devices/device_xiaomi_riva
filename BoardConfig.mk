@@ -198,6 +198,9 @@ DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 $(shell rm -rf hardware/qcom/display-caf/msm8996/liblight)
 $(shell rm -rf vendor/qcom/common)
 
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Tap2Wake
 TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
 
