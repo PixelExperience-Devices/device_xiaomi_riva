@@ -177,6 +177,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Doze
 
+# Charger
+include $(LOCAL_PATH)/rootdir/charger/charger.mk
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8937 \
