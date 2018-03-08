@@ -225,7 +225,7 @@ persist.radio.schd.cache=3500 \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.sib16_support=1 \
-service.qti.ims.enabled=1 \
+vendor.service.qti.ims.enabled=1 \
 telephony.lteOnCdmaDevice=1
 
 # RescueParty
