@@ -78,6 +78,7 @@ persist.hwc.mdpcomp.enable=true \
 sys.display-size=3840x2160 \
 sdm.debug.disable_rotator_split=1 \
 sdm.debug.disable_skip_validate=1 \
+sdm.debug.rotator_downscale=1 \
 sdm.perf_hint_window=50 \
 debug.hwui.renderer=opengl \
 qemu.hw.mainkeys=1 \
