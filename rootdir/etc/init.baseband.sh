@@ -1,5 +1,5 @@
 #!/system/bin/sh
-# Copyright (c) 2015, CyanogenMod. All rights reserved.
+# Copyright (c) 2017, Lineage. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -27,4 +27,4 @@
 #
 
 # grep the modem partition for baseband version and set it
-setprop gsm.version.baseband `strings /dev/block/bootdevice/by-name/modem | grep "^MPSS.TA." | head -1`
+setprop gsm.version.baseband `strings /dev/block/bootdevice/by-name/modem | grep "^MPSS.JO." | head -1`
