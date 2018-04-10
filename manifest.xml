@@ -108,6 +108,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.perf</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IPerf</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.system.wifi.keystore</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -124,5 +133,5 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IPower</name>
             <instance>default</instance>
         </interface>
-</hal>
+    </hal>
 </manifest>
