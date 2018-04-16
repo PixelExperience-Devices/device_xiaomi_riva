@@ -163,6 +163,7 @@ PRODUCT_PACKAGES += \
     memtrack.msm8937 \
     liboverlay \
     libdisplayconfig \
+    libqdMetaData.system \
     libjni_livedisplay \
     libtinyxml
 
@@ -173,9 +174,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    android.hardware.configstore@1.0-service \
-    vendor.display.color@1.0-service \
-    vendor.display.color@1.0-impl
+    vendor.display.config@1.0 \
+    vendor.display.config@1.0_vendor
 
 # DRM
 PRODUCT_PACKAGES += \
