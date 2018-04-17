@@ -178,6 +178,9 @@ TARGET_PROVIDES_LIBLIGHT := true
 BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/lineagehw
 
+# Tap2Wake
+TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
+
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
