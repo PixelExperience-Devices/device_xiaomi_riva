@@ -35,9 +35,7 @@ etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Headset_cal.acdb
 etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Speaker_cal.acdb
 
 # Camera
-bin/mm-qcamera-app
 bin/mm-qcamera-daemon
-lib/hw/camera.msm8937.so
 lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
