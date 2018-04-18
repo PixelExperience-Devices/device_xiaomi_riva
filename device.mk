@@ -95,39 +95,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.0-impl \
     android.hardware.soundtrigger@2.0-service
 
-# Audio configuration
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/audio/audio_effects.xml:system/vendor/etc/audio_effects.xml \
-	$(LOCAL_PATH)/audio/audio_output_policy.conf:system/vendor/etc/audio_output_policy.conf \
-	$(LOCAL_PATH)/audio/audio_policy.conf:system/vendor/etc/audio_policy.conf \
-	$(LOCAL_PATH)/audio/a2dp_audio_policy_configuration.xml:system/vendor/etc/a2dp_audio_policy_configuration.xml \
-	$(LOCAL_PATH)/audio/audio_platform_info.xml:system/vendor/etc/audio_platform_info.xml \
-	$(LOCAL_PATH)/audio/audio_platform_info_extcodec.xml:system/vendor/etc/audio_platform_info_extcodec.xml \
-	$(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/vendor/etc/audio_policy_configuration.xml \
-	$(LOCAL_PATH)/audio/audio_policy_volumes.xml:system/vendor/etc/audio_policy_volumes.xml \
-	$(LOCAL_PATH)/audio/default_volume_tables.xml:system/vendor/etc/default_volume_tables.xml \
-	$(LOCAL_PATH)/audio/mixer_paths.xml:system/vendor/etc/mixer_paths.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_mtp.xml:system/vendor/etc/mixer_paths_mtp.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_qrd_sku1.xml:system/vendor/etc/mixer_paths_qrd_sku1.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_qrd_sku2.xml:system/vendor/etc/mixer_paths_qrd_sku2.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_qrd_skuh.xml:system/vendor/etc/mixer_paths_qrd_skuh.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_qrd_skuhf.xml:system/vendor/etc/mixer_paths_qrd_skuhf.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_qrd_skui.xml:system/vendor/etc/mixer_paths_qrd_skui.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_qrd_skum.xml:system/vendor/etc/mixer_paths_qrd_skum.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_qrd_skun.xml:system/vendor/etc/mixer_paths_qrd_skun.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_skuk.xml:system/vendor/etc/mixer_paths_skuk.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_wcd9306.xml:system/vendor/etc/mixer_paths_wcd9306.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_wcd9326.xml:system/vendor/etc/mixer_paths_wcd9326.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_wcd9330.xml:system/vendor/etc/mixer_paths_wcd9330.xml \
-	$(LOCAL_PATH)/audio/mixer_paths_wcd9335.xml:system/vendor/etc/mixer_paths_wcd9335.xml \
-	$(LOCAL_PATH)/audio/r_submix_audio_policy_configuration.xml:system/vendor/etc/r_submix_audio_policy_configuration.xml \
-	$(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:system/vendor/etc/sound_trigger_mixer_paths.xml \
-	$(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9306.xml:system/vendor/etc/sound_trigger_mixer_paths_wcd9306.xml \
-	$(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9330.xml:system/vendor/etc/sound_trigger_mixer_paths_wcd9330.xml \
-	$(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9335.xml:system/vendor/etc/sound_trigger_mixer_paths_wcd9335.xml \
-	$(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:system/vendor/etc/sound_trigger_platform_info.xml \
-	$(LOCAL_PATH)/audio/usb_audio_policy_configuration.xml:system/vendor/etc/usb_audio_policy_configuration.xml
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor \
