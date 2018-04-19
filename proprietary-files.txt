@@ -57,24 +57,11 @@ etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Speaker_cal.acdb:vendor/etc/acdb
 
 # Camera
 bin/mm-qcamera-daemon
-lib/libmm-qcamera.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
-lib/libmorpho_memory_allocator.so
-lib/libmorpho_panorama.so
-lib/libqomx_core.so
 lib/libsigchain.so
 lib64/libmorpho_memory_allocator.so
 lib64/libmorpho_panorama.so
 lib64/libsigchain.so
 vendor/lib/libChamomilePA.so
-vendor/lib/libFaceGrade.so
-vendor/lib/libFaceProc.so
-vendor/lib/libRecoFace.so
-vendor/lib/libarcsoft_beauty_shot.so
-vendor/lib/libarcsoft_beautyshot.so
-vendor/lib/libarcsoft_beautyshot_image_algorithm.so
-vendor/lib/libarcsoft_beautyshot_video_algorithm.so
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
@@ -261,9 +248,6 @@ vendor/lib/libmmcamera_truly_cmb433_eeprom.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-vendor/lib/libmorpho_easy_hdr.so
-vendor/lib/libmorpho_hdr_checker.so
-vendor/lib/libmorpho_panorama_gp.so
 vendor/lib/libmpbase.so
 vendor/lib/libois_lc898122.so
 vendor/lib/liboptizoom.so
