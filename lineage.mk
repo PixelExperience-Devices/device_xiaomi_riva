@@ -25,8 +25,8 @@ BOARD_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="rolex-user 6.0.1 MMB29M V8.5.1.0.MCCMIED release-keys"
+    PRIVATE_BUILD_DESC="rolex-user 7.1.2 N2G47H V9.2.6.0.NCCMIEK release-keys"
 
-# Set BUILD_FINGERPRINT variable to be picked up by both system and boot image
-BUILD_FINGERPRINT := "Itel/QL1667/itel-S42:8.0.0/OPR1.170623.032/IN-V019-20180111:user/release-keys"
+# Set BUILD_FINGERPRINT variable
+BUILD_FINGERPRINT := "Xiaomi/rolex/rolex:7.1.2/N2G47H/V9.2.6.0.NCCMIEK:user/release-keys"
 
