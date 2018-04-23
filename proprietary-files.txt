@@ -58,6 +58,9 @@ etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Speaker_cal.acdb:vendor/etc/acdb
 # Camera
 bin/mm-qcamera-daemon
 vendor/lib/libChamomilePA.so
+vendor/lib/libmorpho_easy_hdr.so
+vendor/lib/libmorpho_hdr_checker.so
+vendor/lib/libmorpho_panorama_gp.so
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
