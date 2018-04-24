@@ -1976,6 +1976,10 @@ etc/firmware/a530v3_gpmu.fw2
 etc/firmware/a530v3_seq.fw2
 etc/firmware/a540_gpmu.fw2
 
+# Lights - from (santoni)
+lib/hw/lights.msm8937.so
+lib64/hw/lights.msm8937.so
+
 # Consumer Ir
 lib/hw/consumerir.default.so
 lib64/hw/consumerir.default.so
