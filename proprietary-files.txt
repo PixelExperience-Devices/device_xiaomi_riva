@@ -1,10 +1,11 @@
-# Audio
-lib/libDiracAPI_SHARED.so
+# Audio dirac - from MIUI Stable - V9.2.6.0.NCCMIEK
 lib/soundfx/libdirac.so
+lib/libDiracAPI_SHARED.so
+vendor/etc/diracmobile.config
 vendor/lib/libhwdaphal.so
 vendor/lib64/libhwdaphal.so
 
-# Audio ACDB
+# Audio ACDB - from MIUI Stable - V9.2.6.0.NCCMIEK
 etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 etc/acdbdata/MTP/MTP_General_cal.acdb:vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
 etc/acdbdata/MTP/MTP_Global_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
@@ -55,8 +56,9 @@ etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Hdmi_cal.acdb:vendor/etc/acdbdat
 etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Headset_cal.acdb:vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Headset_cal.acdb
 etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Speaker_cal.acdb:vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Speaker_cal.acdb
 
-# Camera
-bin/mm-qcamera-daemon
+# Camera - from MIUI Stable - V9.2.6.0.NCCMIEK
+bin/mm-qcamera-app:vendor/bin/mm-qcamera-app
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 vendor/lib/libjni_dualcamera.so
 vendor/lib/libChamomilePA.so
 vendor/lib/libmorpho_easy_hdr.so
@@ -277,7 +279,7 @@ vendor/lib64/libjni_dualcamera.so
 -vendor/lib/libts_detected_face_hal.so
 -vendor/lib/libts_face_beautify_hal.so
 
-# Camera actuators
+# Camera actuators - from MIUI Stable - V9.2.6.0.NCCMIEK
 vendor/lib/libactuator_ad5816g.so
 vendor/lib/libactuator_ad5823.so
 vendor/lib/libactuator_ak7345.so
@@ -300,7 +302,7 @@ vendor/lib/libactuator_rohm_bu64243gwz.so
 vendor/lib/libactuator_dw9763_sony_imx486_ii.so
 vendor/lib/libactuator_ovt_ov12a10_i_dw9763.so
 
-# Camera chromatix
+# Camera chromatix - from MIUI Stable - V9.2.6.0.NCCMIEK
 vendor/lib/libchromatix_imx230_cpp_snapshot_downscale.so
 vendor/lib/libchromatix_imx258_default_video.so
 vendor/lib/libchromatix_imx230_cpp_snapshot_upscale.so
@@ -1845,7 +1847,7 @@ vendor/lib/libchromatix_sony_imx486_ii_india_snapshot.so
 vendor/lib/libchromatix_sony_imx486_ii_india_zsl_preview_dw9714v.so
 vendor/lib/libchromatix_sony_imx486_ii_india_zsl_video_dw9714v.so
 
-# Camera configs
+# Camera configs - from MIUI Stable - V9.6.2.0
 etc/camera/camera_config.xml
 etc/camera/csidtg_camera.xml
 etc/camera/imx214_chromatix.xml
@@ -1908,7 +1910,7 @@ etc/camera/s5k3l8_ofilm_riva_india_chromatix.xml
 etc/camera/s5k5e8_ofilm_riva_india_chromatix.xml
 etc/camera/s5k5e8_qtech_riva_india_chromatix.xml
 
-# Camera firmware
+# Camera firmware - from MIUI Stable - V9.2.6.0.NCCMIEK
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
@@ -1920,7 +1922,7 @@ etc/firmware/cpp_firmware_v1_8_0.fw
 etc/firmware/cpp_firmware_v1_10_0.fw
 etc/firmware/cpp_firmware_v1_12_0.fw
 
-# Camera sensors
+# Camera sensors - from MIUI Stable - V9.2.6.0.NCCMIEK
 vendor/lib/libmmcamera_isp_abf40.so
 vendor/lib/libmmcamera_isp_bcc40.so
 vendor/lib/libmmcamera_isp_be_stats44.so
@@ -1956,7 +1958,16 @@ vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libmmcamera_isp_template.so
 vendor/lib/libmmcamera_isp_wb40.so
 
-# Graphics firmware
+# Consumer IR - from MIUI Stable - V9.2.6.0.NCCMIEK
+lib/hw/consumerir.default.so
+lib64/hw/consumerir.default.so
+
+# Display calibration - from MIUI Stable - V9.2.6.0.NCCMIEK
+etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3a.xml
+etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3a.xml
+etc/qdcm_calib_data_nt35521s_HD720p_video_EBBG_c3a.xml
+
+# Graphics firmware - from MIUI Stable - V9.2.6.0.NCCMIEK
 etc/firmware/a225p5_pm4.fw
 etc/firmware/a225_pfp.fw
 etc/firmware/a225_pm4.fw
@@ -1975,19 +1986,3 @@ etc/firmware/a530v2_seq.fw2
 etc/firmware/a530v3_gpmu.fw2
 etc/firmware/a530v3_seq.fw2
 etc/firmware/a540_gpmu.fw2
-
-# Lights - from (santoni)
-lib/hw/lights.msm8937.so
-lib64/hw/lights.msm8937.so
-
-# Consumer Ir
-lib/hw/consumerir.default.so
-lib64/hw/consumerir.default.so
-
-# Display calibration
-etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3a.xml
-etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3a.xml
-etc/qdcm_calib_data_nt35521s_HD720p_video_EBBG_c3a.xml
-
-# Wi-Fi - from tissot (Mi A1)
-vendor/bin/wcnss_service|828ff8b29fcc6a59644a7b9baf02f29eafe034a8
