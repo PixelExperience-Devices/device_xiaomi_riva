@@ -3,6 +3,6 @@
 <resources>
     <!-- Chargingspeed Thresholds -->
     <integer name=" config_chargingSlowlyThreshold">800</integer>
-    <integer name=" config_chargingFastThreshold">900</integer>
+    <integer name=" config_chargingFastThreshold">1000</integer>
     <bool name="config_currentampere">true</bool>
 </resources>
