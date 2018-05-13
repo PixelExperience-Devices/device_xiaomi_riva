@@ -56,6 +56,8 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
+    start graphics-sh
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
@@ -67,7 +69,6 @@ on early-boot
     write /sys/kernel/boot_cdsp/boot 1
     write /sys/kernel/boot_slpi/boot 1
     chown root audio /sys/kernel/boot_adsp/boot
-    start graphics-sh
 
 on boot
     chown system system /sys/bus/i2c/devices/3-0038/set_cover_mode
