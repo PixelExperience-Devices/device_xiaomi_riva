@@ -95,7 +95,7 @@ etc/firmware/rampatch_tlv_2.1.tlv:vendor/firmware/rampatch_tlv_2.1.tlv
 etc/firmware/rampatch_tlv_3.0.tlv:vendor/firmware/rampatch_tlv_3.0.tlv
 etc/firmware/rampatch_tlv_3.2.tlv:vendor/firmware/rampatch_tlv_3.2.tlv
 
-# Camera - from rolex - V9.2.6.0.NCCMIEK
+# Camera - from riva - V9.2.6.0.NCCMIEK
 vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
 vendor/lib/libflash_gpio.so|06aafdce226e43855a230d9840e31446b3262611
 vendor/lib/libflash_pmic.so|6e0efce330476a9844a81fe92a58c4ab7f6a2868
@@ -120,7 +120,7 @@ vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
 vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef
 vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed
 
-# Camera actuators - from rolex - V9.2.6.0.NCCMIEK
+# Camera actuators - from riva - V9.2.6.0.NCCMIEK
 vendor/lib/libactuator_ad5816g.so|3d281ddbc90cea2e05569af8ae20bafac9cab559
 vendor/lib/libactuator_ad5823.so|a62d817f8a250c969eded08b340ed07da6af8a65
 vendor/lib/libactuator_ak7345.so|af8f1e9242d452a8d18f1aede481326a5ac0f762
@@ -143,7 +143,7 @@ vendor/lib/libactuator_ovt_ov12a10_i_dw9763.so|64b14cfd99e6d381c21102ce6b9204b78
 vendor/lib/libactuator_pseudo.so|04d831577abece59ae051042bddac6f430ebd724
 vendor/lib/libactuator_rohm_bu64243gwz.so|bac8fcf1b40432af9459d804d70fc2afb094f210
 
-# Camera chromatix - from rolex - V9.2.6.0.NCCMIEK
+# Camera chromatix - from riva - V9.2.6.0.NCCMIEK
 bin/mm-qcamera-app:vendor/bin/mm-qcamera-app|ae879389216910d93bf3661e9c7ef3b56a545397
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|ac9b9fd8d4c2a93e10c461b62677454f22d760ab
 etc/camera/camera_config.xml:vendor/etc/camera/camera_config.xml|3c9c4423d312c376c4a80be62be2b8ca349c3609
@@ -1750,7 +1750,7 @@ vendor/lib/libchromatix_sony_imx486_ii_snapshot.so|1e4b2251a7265db043a27565158ac
 vendor/lib/libchromatix_sony_imx486_ii_zsl_preview_dw9714v.so|83c27db81fc6824ece5d8bfafc4195401dee22cf
 vendor/lib/libchromatix_sony_imx486_ii_zsl_video_dw9714v.so|f4f5cbec6223052e9ec6f8cca8a17705f942e25c
 
-# Camera mmcamera - from rolex - V9.2.6.0.NCCMIEK
+# Camera mmcamera - from riva - V9.2.6.0.NCCMIEK
 lib/libmmcamera_interface.so:vendor/lib/libmmcamera_interface.so|d63ae6b5174a23a97e5f78691cc22b71d91d5c49
 vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so|4d133b9cb89ed8f81099320d704298da1ec832bb
 vendor/lib/libmmcamera_cac3_lib.so|458068eed50c464d3b9a28a0ced04af5acc6cc41
@@ -1931,7 +1931,7 @@ vendor/lib64/libmmcamera2_is.so|1967ee25c89987bf1ec222e407d45b04e809cd00
 vendor/lib64/libmmcamera2_q3a_core.so|13c5b5482f45102aa9221080d7ca7fd511f05aca
 vendor/lib64/libmmcamera2_stats_algorithm.so|19f1fde83c46ae759d30f01408282293544a8b26
 
-# Camera firmware - from rolex - V9.2.6.0.NCCMIEK
+# Camera firmware - from riva - V9.2.6.0.NCCMIEK
 etc/firmware/cpp_firmware_v1_1_1.fw:vendor/firmware/cpp_firmware_v1_1_1.fw|04b8eb253d630eaeadab296e1607dc6a29d93d3c
 etc/firmware/cpp_firmware_v1_1_6.fw:vendor/firmware/cpp_firmware_v1_1_6.fw|6b2c9fe0a43a9ce86a921e18faffe4d0a35746ee
 etc/firmware/cpp_firmware_v1_2_0.fw:vendor/firmware/cpp_firmware_v1_2_0.fw|5ff0d66bcdbb29f4e924d011ae825583e48b3962
