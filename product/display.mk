@@ -13,7 +13,7 @@ PRODUCT_AAPT_PREBUILT_DPI := hdpi
 
 # Ambient display
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    Doze
 
 # Display
 PRODUCT_PACKAGES += \
