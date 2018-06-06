@@ -211,6 +211,9 @@ TARGET_PER_MGR_ENABLED := true
 # Properties
 TARGET_VENDOR_PROP := $(DEVICE_PATH)/vendor.prop
 
+# Power
+TARGET_HAS_LEGACY_POWER_STATS := true
+
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QC_TIME_SERVICES := true
