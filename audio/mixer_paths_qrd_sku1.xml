@@ -63,8 +63,8 @@
     <ctl name="ADC2 Volume" value="4" />
     <ctl name="ADC3 Volume" value="4" />
     <!-- +bug 196716,zhangjianming.wt,MODIFY,20160111,other can not reciving sound  -->
-    <ctl name="DEC1 Volume" value="84" />
-    <ctl name="DEC2 Volume" value="84" />
+    <ctl name="DEC1 Volume" value="72" />
+    <ctl name="DEC2 Volume" value="72" />
     <ctl name="DEC2 MUX" value="ZERO" />
     <ctl name="DEC1 MUX" value="ZERO" />
     <ctl name="ADC2 MUX" value="ZERO" />
