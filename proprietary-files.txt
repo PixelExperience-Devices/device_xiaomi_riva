@@ -1,6 +1,6 @@
 # Audio dirac - from MIUI Stable - V9.2.6.0.NCCMIEK
-lib/soundfx/libdirac.so
-lib/libDiracAPI_SHARED.so
+lib/soundfx/libdirac.so:vendor/lib/soundfx/libdirac.so
+lib/libDiracAPI_SHARED.so:vendor/lib/libDiracAPI_SHARED.so
 vendor/etc/diracmobile.config
 vendor/lib/libhwdaphal.so
 vendor/lib64/libhwdaphal.so
@@ -1858,7 +1858,7 @@ etc/camera/csidtg_camera.xml:vendor/etc/camera/csidtg_camera.xml
 etc/camera/imx214_chromatix.xml:vendor/etc/camera/imx214_chromatix.xml
 etc/camera/imx230_chromatix.xml:vendor/etc/camera/imx230_chromatix.xml
 etc/camera/imx230_qc2002_chromatix.xml:vendor/etc/camera/imx230_qc2002_chromatix.xml
-etc/camera/imx230_qc2002_with_gyro_chromatix.xml:vendoretc/camera/imx230_qc2002_with_gyro_chromatix.xml
+etc/camera/imx230_qc2002_with_gyro_chromatix.xml:vendor/etc/camera/imx230_qc2002_with_gyro_chromatix.xml
 etc/camera/imx258_bear_chromatix.xml:vendor/etc/camera/imx258_bear_chromatix.xml
 etc/camera/imx258_chromatix.xml:vendor/etc/camera/imx258_chromatix.xml
 etc/camera/imx258_mono_bear_chromatix.xml:vendor/etc/camera/imx258_mono_bear_chromatix.xml
@@ -1925,7 +1925,7 @@ etc/firmware/cpp_firmware_v1_5_2.fw:vendor/firmware/cpp_firmware_v1_5_2.fw
 etc/firmware/cpp_firmware_v1_6_0.fw:vendor/firmware/cpp_firmware_v1_6_0.fw
 etc/firmware/cpp_firmware_v1_8_0.fw:vendor/firmware/cpp_firmware_v1_8_0.fw
 etc/firmware/cpp_firmware_v1_10_0.fw:vendor/firmware/cpp_firmware_v1_10_0.fw
-etc/firmware/cpp_firmware_v1_12_0.fw:vvendor/firmware/cpp_firmware_v1_12_0.fw
+etc/firmware/cpp_firmware_v1_12_0.fw:vendor/firmware/cpp_firmware_v1_12_0.fw
 
 # Camera sensors - from MIUI Stable - V9.2.6.0.NCCMIEK
 vendor/lib/libmmcamera_isp_abf40.so
