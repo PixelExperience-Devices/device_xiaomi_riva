@@ -420,7 +420,7 @@ on post-fs-data
 on property:hw.fm.init=*
     write /sys/module/radio_iris_transport/parameters/fmsmd_set ${hw.fm.init}
 
-service iop /system/vendor/bin/iop
+service iop /vendor/bin/iop
     class main
     user root
     group root
@@ -512,13 +512,13 @@ on property:vold.decrypt=trigger_restart_framework
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
 
-service cnd /system/vendor/bin/cnd
+service cnd /vendor/bin/cnd
     class main
     user system
     group system wifi inet radio wakelock net_admin
     writepid /dev/cpuset/system-background/tasks
 
-service dpmQmiMgr /system/vendor/bin/dpmQmiMgr
+service dpmQmiMgr /vendor/bin/dpmQmiMgr
     class main
     user system
     group radio system
@@ -574,7 +574,7 @@ service fmhal_service /system/bin/fmhal_service
     group bluetooth net_bt_admin net_admin
     disabled
 
-service config_bt_addr /system/vendor/bin/btnvtool -O
+service config_bt_addr /vendor/bin/btnvtool -O
     class core
     user bluetooth
     group bluetooth radio
@@ -646,26 +646,26 @@ service qmuxd /system/bin/qmuxd
     user root
     group radio audio bluetooth gps nfc diag
 
-service netmgrd /system/vendor/bin/netmgrd
+service netmgrd /vendor/bin/netmgrd
     class main
     user root
     group radio readproc system wakelock
     writepid /dev/cpuset/system-background/tasks
 
-service ipacm-diag /system/vendor/bin/ipacm-diag
+service ipacm-diag /vendor/bin/ipacm-diag
     class main
     user radio
     socket ipacm_log_file dgram 660 radio radio
     group radio diag
     writepid /dev/cpuset/system-background/tasks
 
-service ipacm /system/vendor/bin/ipacm
+service ipacm /vendor/bin/ipacm
     class main
     user radio
     group radio inet
     writepid /dev/cpuset/system-background/tasks
 
-service qti /system/vendor/bin/qti
+service qti /vendor/bin/qti
     class main
     user radio
     group radio diag usb net_admin
@@ -751,7 +751,7 @@ service wifi_ftmd /system/bin/wifi_ftmd
 on property:wifi.ftmd.load=true
     insmod /system/lib/modules/pronto/pronto_wlan.ko con_mode=5
 
-service loc_launcher /system/vendor/bin/loc_launcher
+service loc_launcher /vendor/bin/loc_launcher
     #loc_launcher will start as root and set its uid to gps
     class late_start
     group gps inet diag wifi
@@ -897,7 +897,7 @@ service vm_bms /system/bin/vm_bms
     group root
     disabled
 
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
+service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
     class core
     user root
     group root
@@ -918,7 +918,7 @@ on property:sys.wfdservice=enable
 on property:sys.wfdservice=disable
     stop wfdservice
 
-#service RIDL /system/vendor/bin/RIDLClient.exe
+#service RIDL /vendor/bin/RIDLClient.exe
 #    class late_start
 #    oneshot
 #    user system
@@ -927,7 +927,7 @@ on property:sys.wfdservice=disable
     # limited to 12 groups.  Unused: audio usb net_bt_admin net_bt_stac net_raw net_admin
 
 # service for USERDEBUG
-service LKCore-dbg /system/vendor/bin/LKCore
+service LKCore-dbg /vendor/bin/LKCore
     class late_start
     oneshot
     disabled
@@ -935,7 +935,7 @@ service LKCore-dbg /system/vendor/bin/LKCore
     group root system log diag net_raw
 
 # service for USER
-service LKCore-rel /system/vendor/bin/LKCore
+service LKCore-rel /vendor/bin/LKCore
     class late_start
     oneshot
     disabled
@@ -963,19 +963,19 @@ on property:sys.dbg.coresight.enable=1
 on property:sys.dbg.coresight.enable=0
     write /persist/coresight/enable 0
 
-service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
+service qseeproxydaemon /vendor/bin/qseeproxydaemon
     class late_start
     user system
     group system
     writepid /dev/cpuset/system-background/tasks
 
-service esepmdaemon /system/vendor/bin/esepmdaemon
+service esepmdaemon /vendor/bin/esepmdaemon
     class core
     user system
     group nfc
 
 # Seemp health service
-service seemp_healthd /system/vendor/bin/seemp_healthd
+service seemp_healthd /vendor/bin/seemp_healthd
     class late_start
     user system
     group system
@@ -993,7 +993,7 @@ service poweroffhandler /system/bin/poweroffhandler
     disabled
     oneshot
 
-service time_daemon /system/vendor/bin/time_daemon
+service time_daemon /vendor/bin/time_daemon
     class main
     user root
     group root
