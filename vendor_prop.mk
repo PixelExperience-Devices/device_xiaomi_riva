@@ -80,7 +80,9 @@ sdm.debug.disable_rotator_split=1 \
 sdm.debug.disable_skip_validate=1 \
 sdm.perf_hint_window=50 \
 debug.hwui.renderer=opengl \
-qemu.hw.mainkeys=1
+qemu.hw.mainkeys=1 \
+vendor.gralloc.enable_fb_ubwc=1 \
+vendor.display.disable_skip_validate=1
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
