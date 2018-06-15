@@ -101,31 +101,11 @@ service per_proxy /vendor/bin/pm-proxy
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-service qfp-daemon /system/bin/qfp-daemon
-   class late_start
-   user system
-   group system drmrpc
-
 on property:init.svc.per_mgr=running
     start per_proxy
 
 on property:sys.shutdown.requested=*
     stop per_proxy
-
-service qrngd /system/bin/qrngd -f
-   class main
-   user root
-   group root
-
-service qrngp /system/bin/qrngp -f
-   class main
-   user root
-   group root
-   oneshot
-   disabled
-
-on property:sys.boot_completed=1
-   start qrngp
 
 service qseecomd /vendor/bin/qseecomd
    class core
@@ -137,13 +117,6 @@ service perfd /vendor/bin/perfd
    class main
    user root
    disabled
-
-service gamed /vendor/bin/gamed
-   class main
-   user system
-   group system
-   disabled
-   socket gamed seqpacket 0640 system system
 
 service thermal-engine /vendor/bin/thermal-engine
    class main
@@ -160,19 +133,10 @@ service adsprpcd /vendor/bin/adsprpcd
    user media
    group media
 
-service audiod /vendor/bin/audiod
-   class late_start
-   user system
-   group system
-
 service wcnss-service /vendor/bin/wcnss_service
     class main
     user system
     group system wifi radio
-    oneshot
-
-service imsstarter /system/bin/sh /system/etc/init.qti.ims.sh
-    class main
     oneshot
 
 on property:vold.decrypt=trigger_restart_framework
@@ -214,12 +178,6 @@ on property:vendor.ims.DATA_DAEMON_STATUS=1
    start ims_rtp_daemon
    start vendor.imsrcsservice
 
-service hbtp /vendor/bin/hbtp_daemon
-    class main
-    user system
-    group system
-    disabled
-
 on property:init.svc.surfaceflinger=stopped
     stop ppd
 
@@ -251,148 +209,6 @@ on charger
     mount ext4 /dev/block/bootdevice/by-name/system /system ro barrier=1
     start hvdcp_opti
 
-service getcolorid /system/bin/getcolorid
-    class core
-    oneshot
-
-# add for function test
-service chmodtpon /system/bin/chmodtp o 1
-    user root
-    oneshot
-    disabled
-
-on property:sys.chmodtp=1
-    start chmodtpon
-
-service chmodtpoff /system/bin/chmodtp f 1
-    user root
-    oneshot
-    disabled
-
-on property:sys.chmodtp=2
-    start chmodtpoff
-
-service chmodtp3on /system/bin/chmodtp o 3
-    user root
-    oneshot
-    disabled
-
-on property:sys.chmodtp3=1
-    start chmodtp3on
-
-service chmodtp3off /system/bin/chmodtp f 3
-    user root
-    oneshot
-    disabled
-
-on property:sys.chmodtp3=2
-    start chmodtp3off
-
-service whiteflashon /system/bin/factory_bin w 1
-    user root
-    oneshot
-    disabled
-
-on property:sys.whiteflashon=1
-    start whiteflashon
-
-service whiteflashoff /system/bin/factory_bin w 0
-    user root
-    oneshot
-    disabled
-
-on property:sys.whiteflashoff=1
-    start whiteflashoff
-
-service yellowflashon /system/bin/factory_bin y 1
-    user root
-    oneshot
-    disabled
-
-on property:sys.yellowflashon=1
-    start yellowflashon
-
-service yellowflashoff /system/bin/factory_bin y 0
-    user root
-    oneshot
-    disabled
-
-on property:sys.yellowflashoff=1
-    start yellowflashoff
-
-service chargingenable /system/bin/factory_bin c 1
-    user root
-    oneshot
-    disabled
-
-on property:sys.charging.enable=1
-    start chargingenable
-
-service chargingdisable /system/bin/factory_bin c 0
-    user root
-    oneshot
-    disabled
-
-on property:sys.charging.disable=1
-    start chargingdisable
-
-service keylighton /system/bin/factory_bin k 1
-    user root
-    oneshot
-    disabled
-on property:sys.keylighton=1
-    start keylighton
-
-service keylightoff /system/bin/factory_bin k 0
-    user root
-    oneshot
-    disabled
-on property:sys.keylightoff=1
-    start keylightoff
-
-service redledon /system/bin/factory_bin r 1
-    user root
-    oneshot
-    disabled
-on property:sys.redledon=1
-    start redledon
-
-service redledoff /system/bin/factory_bin r 0
-    user root
-    oneshot
-    disabled
-on property:sys.redledoff=1
-    start redledoff
-
-service greenledon /system/bin/factory_bin g 1
-    user root
-    oneshot
-    disabled
-on property:sys.greenledon=1
-    start greenledon
-
-service greenledoff /system/bin/factory_bin g 0
-    user root
-    oneshot
-    disabled
-on property:sys.greenledoff=1
-    start greenledoff
-
-service blueledon /system/bin/factory_bin b 1
-    user root
-    oneshot
-    disabled
-on property:sys.blueledon=1
-    start blueledon
-
-service blueledoff /system/bin/factory_bin b 0
-    user root
-    oneshot
-    disabled
-on property:sys.blueledoff=1
-    start blueledoff
-# add end
-
 on boot
 	write /dev/cpuset/top-app/cpus 0-7
 	write /dev/cpuset/top-app/boost/cpus 4-7
@@ -400,15 +216,6 @@ on boot
 	write /dev/cpuset/foreground/boost/cpus 0-6
 	write /dev/cpuset/background/cpus 0-1
 	write /dev/cpuset/system-background/cpus 0-3
-
-service mtservice /system/bin/mtd
-    class late_start
-
-service vsimservice /system/bin/vsimd
-    class late_start
-
-service mlipayservice /system/bin/mlipayd
-    class late_start
 
         # add a cpuset for the camera daemon
         # we want all cores for camera
