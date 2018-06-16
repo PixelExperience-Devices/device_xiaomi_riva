@@ -39,8 +39,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR_PRODUCT_NAME := riva
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="rolex" \
-    PRODUCT_NAME="rolex" \
+    TARGET_DEVICE="riva" \
+    PRODUCT_NAME="riva" \
     PRIVATE_BUILD_DESC="rolex-user 7.1.2 N2G47H V9.2.6.0.NCCMIEK release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
