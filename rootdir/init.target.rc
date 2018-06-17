@@ -90,7 +90,7 @@ service cameraserver /system/bin/cameraserver
 service per_mgr /vendor/bin/pm-service
     class core
     user system
-    group system
+    group system net_raw
     ioprio rt 4
     writepid /dev/cpuset/system-background/tasks
 
