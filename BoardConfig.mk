@@ -199,6 +199,9 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
+# Mke2fs
+TARGET_USES_MKE2FS := true
+
 # Use exfat-nofuse
 TARGET_EXFAT_DRIVER := exfat
 
