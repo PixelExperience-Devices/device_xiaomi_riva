@@ -196,10 +196,10 @@ on property:init.svc.zygote=running
 on property:init.svc.zygote=restarting
     stop ppd
 	
-service hvdcp_opti /vendor/bin/hvdcp_opti
-    class main
-    user root
-    group system wakelock
+#service hvdcp_opti /vendor/bin/hvdcp_opti
+#    class main
+#    user root
+#    group system wakelock
 
 on charger
     write /sys/devices/system/cpu/cpu2/online 0
@@ -207,7 +207,7 @@ on charger
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
     wait /dev/block/bootdevice/by-name/system
     mount ext4 /dev/block/bootdevice/by-name/system /system ro barrier=1
-    start hvdcp_opti
+    #start hvdcp_opti
 
 on boot
 	write /dev/cpuset/top-app/cpus 0-7
