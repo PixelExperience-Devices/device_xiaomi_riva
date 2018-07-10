@@ -447,7 +447,7 @@ PRODUCT_PACKAGES += \
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.lineage.build.vendor_security_patch=2018-01-01
+ro.lineage.build.vendor_security_patch=2018-05-01
 
 # Whitelisted app
 PRODUCT_COPY_FILES += \
