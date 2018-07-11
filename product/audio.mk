@@ -77,3 +77,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.voice.record.conc.disabled=false \
     vendor.voice.voip.conc.disabled=true \
     vendor.voice.conc.fallbackpath=deep-buffer
+    vendor.audio.use.dts_eagle=true
+    use.dts_eagle=true
+    hpx_send_params=1
