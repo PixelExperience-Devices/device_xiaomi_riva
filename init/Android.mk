@@ -22,9 +22,9 @@ LOCAL_C_INCLUDES := \
     system/core/base/include \
     system/core/init \
     external/selinux/libselinux/include
-LOCAL_MODULE := libinit_rolex
+LOCAL_MODULE := libinit_riva
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := init_rolex.cpp
+LOCAL_SRC_FILES := init_riva.cpp
 LOCAL_STATIC_LIBRARIES := \
     libbase \
     libselinux
