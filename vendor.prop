@@ -153,6 +153,7 @@ persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 
 # Optimize 
+sys.use_fifo_ui=1
 ro.sys.fw.dex2oat_thread_count=4
 dalvik.vm.boot-dex2oat-threads=8
 dalvik.vm.dex2oat-threads=4
