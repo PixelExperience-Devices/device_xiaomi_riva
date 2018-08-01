@@ -54,10 +54,11 @@
     <ctl name="RX1 Digital Volume" value="84" />
     <ctl name="RX2 Digital Volume" value="84" />
     <ctl name="RX3 Digital Volume" value="84" />
-    <ctl name="IIR1 INP1 Volume" value="84" />
-    <ctl name="IIR1 INP2 Volume" value="84" />
-    <ctl name="IIR1 INP3 Volume" value="84" />
-    <ctl name="IIR1 INP4 Volume" value="84" />
+    <!-- bug279292,chengong.wt,20170720,.modify,pop when dial -->
+    <ctl name="IIR1 INP1 Volume" value="53" />
+    <ctl name="IIR1 INP2 Volume" value="53" />
+    <ctl name="IIR1 INP3 Volume" value="53" />
+    <ctl name="IIR1 INP4 Volume" value="53" />
     <ctl name="ADC1 Volume" value="4" />
     <ctl name="ADC2 Volume" value="4" />
     <ctl name="ADC3 Volume" value="4" />
@@ -80,7 +81,7 @@
     <ctl name="EAR_S" value="ZERO" />
     <ctl name="HPHL" value="ZERO" />
     <ctl name="HPHR" value="ZERO" />
-    <ctl name="Lineout_1 amp" value="DISABLE"/> 
+    <ctl name="Ext Spk Switch" value="Off"/> 
     <ctl name="headset amp" value="DISABLE"/>
     <ctl name="SPK" value="ZERO" />
     <ctl name="WSA Spk Switch" value="ZERO" />
@@ -850,11 +851,14 @@
 
     <path name="speaker">
     <!-- speaker use hphr chengong.wt 20170504 -->
-        <ctl name="MI2S_RX Channels" value="One" />
+    <!-- bug283537,chengong.wt,20170807,modify,speaker use two channels -->
+        <ctl name="MI2S_RX Channels" value="Two" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RX2 MIX1 INP1" value="RX2" />
         <ctl name="RDAC2 MUX" value="RX2" />
+        <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
-        <ctl name="Lineout_1 amp" value="ENABLE"/>
+        <ctl name="Ext Spk Switch" value="On"/>
     </path>
 
     <path name="wsa-speaker">
@@ -909,7 +913,6 @@
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
-        <ctl name="headset amp" value="ENABLE"/>
     </path>
 
     <path name="headset-mic">
@@ -975,7 +978,7 @@
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
-        <ctl name="Lineout_1 amp" value="DUALMODE"/>
+        <ctl name="Ext Spk Switch" value="On"/>
     </path>
 
     <path name="usb-headphones">
@@ -1180,5 +1183,29 @@
     <path name="speaker-and-line">
           <path name="speaker-and-headphones" />
     </path>
+
+    <!-- there is used for wt mmi cust test -->
+    <path name="second-mic">
+        <ctl name="ADC3 Volume" value="6" />
+        <ctl name="DEC1 MUX" value="ADC2" />
+        <ctl name="ADC2 MUX" value="INP3" />
+    </path>
+
+    <path name="speaker-left">
+        <ctl name="MI2S_RX Channels" value="One" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RDAC2 MUX" value="RX2" />
+        <ctl name="HPHL" value="Switch" />
+        <ctl name="Ext Spk Switch" value="On"/>
+   </path>
+
+    <path name="speaker-right">
+        <ctl name="MI2S_RX Channels" value="One" />
+        <ctl name="RX2 MIX1 INP1" value="RX2" />
+        <ctl name="RDAC2 MUX" value="RX2" />
+        <ctl name="HPHR" value="Switch" />
+        <ctl name="Ext Spk Switch" value="On"/>
+   </path>
+
 
 </mixer>
