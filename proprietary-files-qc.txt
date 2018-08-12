@@ -531,7 +531,6 @@ vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS - from tissot - OPR1.170623.026.V9.5.4.0.ODHMIFA
 -app/ims/ims.apk:vendor/app/ims/ims.apk|24aee26c7409564400ce093520408242863630c6
--app/imssettings/imssettings.apk:vendor/app/imssettings/imssettings.apk
 -app/uceShimService/uceShimService.apk
 etc/permissions/qti-vzw-ims-internal.xml:vendor/etc/permissions/qti-vzw-ims-internal.xml
 etc/permissions/com.qualcomm.qti.imscmservice.xml:vendor/etc/permissions/com.qualcomm.qti.imscmservice.xml
@@ -539,6 +538,7 @@ framework/com.qualcomm.qti.imscmservice@1.0-java.jar:vendor/framework/com.qualco
 lib/com.qualcomm.qti.imscmservice@1.0.so:vendor/lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/lib-imscamera.so:vendor/lib/lib-imscamera.so
 lib/lib-imsvideocodec.so:vendor/lib/lib-imsvideocodec.so
+lib/lib-imsvt.so:vendor/lib/lib-imsvt.so
 lib/lib-imsvtextutils.so:vendor/lib/lib-imsvtextutils.so
 lib/lib-imsvtutils.so:vendor/lib/lib-imsvtutils.so
 lib/libimscamera_jni.so:vendor/lib/libimscamera_jni.so
@@ -567,9 +567,7 @@ vendor/lib/lib-imsdpl.so
 vendor/lib/lib-imsqimf.so
 vendor/lib/lib-imsxml.so
 vendor/lib/lib-rtpcommon.so
-vendor/lib/lib-rtpcore.so
-vendor/lib/lib-rtpdaemoninterface.so
-vendor/lib/lib-rtpsl.so
+vendor/lib/lib-siputility.so
 vendor/lib/lib-uceservice.so
 vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so
@@ -584,6 +582,7 @@ vendor/lib64/lib-rtpcommon.so
 vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpdaemoninterface.so
 vendor/lib64/lib-rtpsl.so
+vendor/lib64/lib-siputility.so
 vendor/lib64/lib-uceservice.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
