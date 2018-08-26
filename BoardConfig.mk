@@ -188,6 +188,9 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_rolex
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
+# Hack for remove liblight		
+$(shell rm -rf hardware/qcom/display-caf/msm8996/liblight)
+
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
