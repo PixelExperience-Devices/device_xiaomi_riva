@@ -452,10 +452,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndk-sp
 
-# Vendor security patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.lineage.build.vendor_security_patch=2018-06-01
-
 # Whitelisted app
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/qti_whitelist.xml

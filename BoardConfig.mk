@@ -230,6 +230,9 @@ TARGET_RIL_VARIANT := caf
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2018-09-01
+
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
