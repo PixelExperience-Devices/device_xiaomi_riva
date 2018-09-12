@@ -92,7 +92,8 @@ qemu.hw.mainkeys=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.perf_hint_window=50 \
-video.accelerate.hw=1
+video.accelerate.hw=1 \
+debug.sdm.support_writeback=0
 
 # Property to enable display default color mode
 PRODUCT_PROPERTY_OVERRIDES += \
