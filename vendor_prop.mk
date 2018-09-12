@@ -92,6 +92,7 @@ sdm.debug.disable_rotator_split=1 \
 sdm.debug.disable_skip_validate=1 \
 sdm.perf_hint_window=50 \
 debug.hwui.profile=true \
+debug.hwui.renderer=opengl \
 qemu.hw.mainkeys=1
 
 # Dalvik
