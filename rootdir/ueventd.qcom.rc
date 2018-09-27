@@ -63,7 +63,10 @@
 
 # QDSS
 /dev/byte-cntr            0660   system    oem_2902
+/dev/mhi_qdss             0660   system    oem_2902
+/sys/class/qdss_bridge/mhi_qdss  mode      0660     system   oem_2902
 
+# Others
 /dev/radio0               0640   system     system
 /dev/rfcomm0              0660   bluetooth  bluetooth
 /dev/ttyUSB0              0660   bluetooth  bluetooth
@@ -140,6 +143,7 @@
 /dev/adsprpc-smd          0664   system     system
 /dev/system_health_monitor 0644  radio      system
 /dev/mdss_rotator         0664   system     system
+
 # wlan
 /dev/wcnss_wlan           0660   system     system
 /dev/wcnss_ctrl           0660   system     system
