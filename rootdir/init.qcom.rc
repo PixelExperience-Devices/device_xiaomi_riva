@@ -35,6 +35,10 @@ on early-init
     chmod 0620 /dev/kmsg
 
 on init
+
+    # Mount audio_policy_configuration.xml in /vendor/etc/audio
+    mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio/audio_policy_configuration.xml bind
+
     # Set permissions for persist partition
     mkdir /persist 0771 root system
 
