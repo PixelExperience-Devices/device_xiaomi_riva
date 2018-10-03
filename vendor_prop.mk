@@ -14,7 +14,6 @@ persist.audio.fluence.speaker=false \
 persist.vendor.audio.fluence.speaker=false \
 persist.vendor.audio.fluence.voicecall=true \
 persist.vendor.audio.fluence.voicerec=false \
-persist.vendor.audio.speaker.prot.enable=false \
 persist.vendor.bt.enable.splita2dp=false \
 ro.qc.sdk.audio.fluencetype=fluence \
 ro.vendor.audio.sdk.fluencetype=fluence \
