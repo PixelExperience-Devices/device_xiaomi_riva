@@ -72,17 +72,7 @@ service qcamerasvr /vendor/bin/mm-qcamera-daemon
     class late_start
     user camera
     group camera system inet input graphics
-    setenv LD_PRELOAD "/vendor/lib/libshim_camera.so"
     writepid /dev/cpuset/system-background/tasks
-
-# redefine cameraserver to load shim
-service cameraserver /system/bin/cameraserver
-    class main
-    user cameraserver
-    group audio camera input drmrpc
-    ioprio rt 4
-    setenv LD_PRELOAD "libshim_cameraservice.so"
-    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/top-app/tasks
 
     #Start the following services needed for fftm
     start surfaceflinger
@@ -230,3 +220,4 @@ service ppd /vendor/bin/mm-pp-dpps
     group system graphics
     socket pps stream 0660 system system
     disabled
+

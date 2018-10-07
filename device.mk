@@ -151,7 +151,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8937 \
     libmm-qcamera \
-    libshim_camera \
     Snap
 
 PRODUCT_PACKAGES += \
@@ -281,10 +280,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
-
-# Libshims
-PRODUCT_PACKAGES += \
-    libshim_cameraservice
 
 # Lights
 PRODUCT_PACKAGES += \
