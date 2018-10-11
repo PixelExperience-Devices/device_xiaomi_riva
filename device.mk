@@ -166,27 +166,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.camera
 
-# Camera fixes temp hack
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilds/lib/android.hardware.camera.common@1.0.so:system/lib/android.hardware.camera.common@1.0.so \
-    $(LOCAL_PATH)/prebuilds/lib/android.hardware.camera.device@1.0.so:system/lib/android.hardware.camera.device@1.0.so \
-    $(LOCAL_PATH)/prebuilds/lib/android.hardware.camera.device@3.2.so:system/lib/android.hardware.camera.device@3.2.so \
-    $(LOCAL_PATH)/prebuilds/lib/android.hardware.camera.device@3.3.so:system/lib/android.hardware.camera.device@3.3.so \
-    $(LOCAL_PATH)/prebuilds/lib/android.hardware.camera.device@3.4.so:system/lib/android.hardware.camera.device@3.4.so \
-    $(LOCAL_PATH)/prebuilds/lib/android.hardware.camera.provider@2.4.so:system/lib/android.hardware.camera.provider@2.4.so \
-    $(LOCAL_PATH)/prebuilds/lib/libcamera_client.so:system/lib/libcamera_client.so \
-    $(LOCAL_PATH)/prebuilds/lib/libcamera_metadata.so:system/lib/libcamera_metadata.so \
-    $(LOCAL_PATH)/prebuilds/lib/libcamera2ndk.so:system/lib/libcamera2ndk.so \
-    $(LOCAL_PATH)/prebuilds/lib/libcameraservice.so:system/lib/libcameraservice.so \
-    $(LOCAL_PATH)/prebuilds/lib64/android.hardware.camera.common@1.0.so:system/lib64/android.hardware.camera.common@1.0.so \
-    $(LOCAL_PATH)/prebuilds/lib64/android.hardware.camera.device@1.0.so:system/lib64/android.hardware.camera.device@1.0.so \
-    $(LOCAL_PATH)/prebuilds/lib64/android.hardware.camera.device@3.2.so:system/lib64/android.hardware.camera.device@3.2.so \
-    $(LOCAL_PATH)/prebuilds/lib64/android.hardware.camera.device@3.3.so:system/lib64/android.hardware.camera.device@3.3.so \
-    $(LOCAL_PATH)/prebuilds/lib64/android.hardware.camera.device@3.4.so:system/lib64/android.hardware.camera.device@3.4.so \
-    $(LOCAL_PATH)/prebuilds/lib64/android.hardware.camera.provider@2.4.so:system/lib64/android.hardware.camera.provider@2.4.so \
-    $(LOCAL_PATH)/prebuilds/lib64/libkeystore_binder.so:system/lib64/libkeystore_binder.so \
-    $(LOCAL_PATH)/prebuilds/lib64/libkeystore-engine.so:system/lib64/libkeystore-engine.so
-
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
@@ -476,16 +455,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-
-#Wifi & Hotspot Fixes temp hack
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilds/vendor/lib64/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwc2onfbadapter.so \
-    $(LOCAL_PATH)/prebuilds/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
-    $(LOCAL_PATH)/prebuilds/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
-    $(LOCAL_PATH)/prebuilds/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
-    $(LOCAL_PATH)/prebuilds/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
-    $(LOCAL_PATH)/prebuilds/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
-    $(LOCAL_PATH)/prebuilds/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc
 
 # Google Lens
 PRODUCT_COPY_FILES += \
