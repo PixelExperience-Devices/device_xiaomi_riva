@@ -101,7 +101,17 @@ static void handleNotification(const LightState& state) {
     }
 
     if (onMs > 0 && offMs > 0) {
-        blink = 1;
+        /*
+         * if ON time == OFF time
+         *   use blink mode 2
+         * else
+         *   use blink mode 1
+         */
+        if (onMs == offMs) {
+            blink = 2;
+        } else {
+            blink = 1;
+        }
     } else {
         blink = 0;
     }
