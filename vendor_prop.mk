@@ -150,6 +150,18 @@ ro.hwui.text_small_cache_height=1024 \
 ro.hwui.texture_cache_flushrate=0.4 \
 ro.hwui.texture_cache_size=72
 
+#LKMD
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.low=1001 \
+    ro.lmk.medium=800 \
+    ro.lmk.critical=0 \
+    ro.lmk.critical_upgrade=false \
+    ro.lmk.upgrade_pressure=100 \
+    ro.lmk.downgrade_pressure=100 \
+    ro.lmk.kill_heaviest_task=true \
+    ro.lmk.kill_timeout_ms=100 \
+    ro.lmk.use_minfree_levels=true
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 media.msm8956hw=0 \
