@@ -389,3 +389,11 @@ if [ -f /data/system/users/0/settings_global.xml ]; then
     sed -i 's/"multi_sim_data_call" value="1"/"multi_sim_data_call" value="-1"/g' /data/system/users/0/settings_global.xml
     restorecon /data/system/users/0/settings_global.xml
 fi
+
+on post-fs-data
+
+    # IR nodes
+    chown system system /dev/spidev7.1
+    chown system system /dev/spidev6.1
+    chmod 0666 /dev/spidev7.1
+    chmod 0666 /dev/spidev6.1
