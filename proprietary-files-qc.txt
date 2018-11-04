@@ -288,7 +288,7 @@ vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
-# Graphics (adreno 308) - from vivo Y71 8.1
+# Graphics (adreno 308) - from Infinix Hot 6 Pro 8.1
 vendor/lib/egl/eglsubAndroid.so
 vendor/lib64/egl/eglsubAndroid.so
 vendor/lib/libc2d30-a3xx.so
