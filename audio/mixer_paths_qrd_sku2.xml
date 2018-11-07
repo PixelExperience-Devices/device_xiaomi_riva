@@ -216,6 +216,9 @@
     <!-- Incall Music -->
     <ctl name="Incall_Music Audio Mixer MultiMedia2" value="0" />
     <ctl name="Incall_Music_2 Audio Mixer MultiMedia9" value="0" />
+    <ctl name="Incall_Music Audio Mixer MultiMedia1" value="0" />
+    <ctl name="Incall_Music_2 Audio Mixer MultiMedia2" value="0" />
+    <ctl name="Incall_Music_2 Audio Mixer MultiMedia1" value="0" />
     <!-- Incall Music End -->
 
     <!-- QCHAT -->
@@ -269,6 +272,9 @@
         <ctl name="Internal BTSCO SampleRate" value="16000" />
     </path>
 
+
+
+	
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="deep-buffer-playback">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
@@ -728,12 +734,32 @@
     <path name="incall_music_uplink">
        <ctl name="Incall_Music Audio Mixer MultiMedia2" value="1" />
     </path>
+	
+    <path name="incall_music_uplink speaker">
+        <path name="incall_music_uplink" />
+    </path>
 
+    <path name="incall_music_uplink speaker-protected">
+        <path name="incall_music_uplink" />
+    </path>
+	
+    <path name="incall_music_uplink handset">
+        <path name="incall_music_uplink" />
+    </path>
+	
     <path name="incall_music_uplink bt-sco">
         <path name="incall_music_uplink" />
     </path>
 
     <path name="incall_music_uplink bt-sco-wb">
+        <path name="incall_music_uplink" />
+    </path>
+	
+    <path name="incall_music_uplink speaker-and-bt-sco">
+        <path name="incall_music_uplink" />
+    </path>
+	
+    <path name="incall_music_uplink speaker-and-bt-sco-wb">
         <path name="incall_music_uplink" />
     </path>
 
@@ -744,8 +770,37 @@
     <path name="incall_music_uplink usb-headphones">
         <path name="incall_music_uplink" />
     </path>
+	
+    <path name="incall_music_uplink usb-headset">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink speaker-and-usb-headphones">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink headphones">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink speaker-and-headphones">
+        <path name="incall_music_uplink" />
+    </path>
+	
     <path name="incall_music_uplink2">
         <ctl name="Incall_Music_2 Audio Mixer MultiMedia9" value="1" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-protected">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 handset">
+        <path name="incall_music_uplink2" />
     </path>
 
     <path name="incall_music_uplink2 bt-sco">
@@ -756,6 +811,14 @@
         <path name="incall_music_uplink2" />
     </path>
 
+    <path name="incall_music_uplink2 speaker-and-bt-sco">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-bt-sco-wb">
+        <path name="incall_music_uplink2" />
+    </path>
+
     <path name="incall_music_uplink2 afe-proxy">
         <path name="incall_music_uplink2" />
     </path>
@@ -763,6 +826,23 @@
     <path name="incall_music_uplink2 usb-headphones">
         <path name="incall_music_uplink2" />
     </path>
+
+    <path name="incall_music_uplink2 usb-headset">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-usb-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
     <path name="volte-call">
         <ctl name="PRI_MI2S_RX_Voice Mixer VoLTE" value="1" />
         <ctl name="VoLTE_Tx Mixer TERT_MI2S_TX_VoLTE" value="1" />
@@ -852,8 +932,7 @@
     <path name="speaker">
     <!-- speaker use hphr chengong.wt 20170504 -->
     <!-- bug283537,chengong.wt,20170807,modify,speaker use two channels -->
-        <ctl name="MI2S_RX Channels" value="Two" />
-        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="MI2S_RX Channels" value="One" />
         <ctl name="RX2 MIX1 INP1" value="RX2" />
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="HPHL" value="Switch" />
@@ -1209,4 +1288,3 @@
 
 
 </mixer>
-
