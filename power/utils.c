@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012-2013,2015-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013,2015-2017, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -40,14 +40,14 @@
 #include "hint-data.h"
 #include "power-common.h"
 
-#define LOG_TAG "QCOM PowerHAL"
-#include <log/log.h>
+#define LOG_TAG "QTI PowerHAL"
+#include <utils/Log.h>
 
 char scaling_gov_path[4][80] ={
-    "/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor",
-    "/sys/devices/system/cpu/cpu1/cpufreq/scaling_governor",
-    "/sys/devices/system/cpu/cpu2/cpufreq/scaling_governor",
-    "/sys/devices/system/cpu/cpu3/cpufreq/scaling_governor"
+    "sys/devices/system/cpu/cpu0/cpufreq/scaling_governor",
+    "sys/devices/system/cpu/cpu1/cpufreq/scaling_governor",
+    "sys/devices/system/cpu/cpu2/cpufreq/scaling_governor",
+    "sys/devices/system/cpu/cpu3/cpufreq/scaling_governor"
 };
 
 #define PERF_HAL_PATH "libqti-perfd-client.so"
