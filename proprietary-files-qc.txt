@@ -208,7 +208,7 @@ vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
 vendor/lib64/vendor.qti.gnss@1.0_vendor.so
 
-# Graphics - from marmite - OPM5.171019.017 - UOS273C
+# Graphics - from riva - OPM1.171019.026 - 8.11.6
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libESXEGL_adreno.so
@@ -268,11 +268,11 @@ vendor/lib64/libmm-qdcm.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
 
-# Graphics (HDR) - from marmite - OPM5.171019.017 - UOS273C
+# Graphics (HDR) - from riva - OPM1.171019.026 - 8.11.6
 vendor/lib/libhdr_tm.so
 vendor/lib64/libhdr_tm.so
 
-# Graphics (SDM) - from marmite - OPM5.171019.017 - UOS273C
+# Graphics (SDM) - from riva - OPM1.171019.026 - 8.11.6
 lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so
 lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so
 vendor/lib/libscalar.so
@@ -289,7 +289,7 @@ vendor/lib64/libsdm-diag.so|25bab19a8c4453b3d20e3e1a71a0e8d3675b17b4
 vendor/lib64/libsdmextension.so|616b323d407e002035849a8674f1b0efb3390725
 vendor/lib64/libtinyxml2_1.so|9d5179eda8ce70b9a4014b144f9d23d33509fddc
 
-# Graphics (adreno 308) - from Infinix Hot 6 Pro 8.1
+# Graphics (adreno 308) - from riva - OPM1.171019.026 - 8.11.6
 vendor/lib/egl/eglsubAndroid.so
 vendor/lib64/egl/eglsubAndroid.so
 vendor/lib/libc2d30-a3xx.so
@@ -297,11 +297,31 @@ vendor/lib/libsc-a3xx.so
 vendor/lib64/libsc-a3xx.so
 vendor/lib64/libc2d30-a3xx.so
 
-# Graphics (Vulkan) - from marmite - OPM5.171019.017 - UOS273C
+# Graphics (Vulkan) - from riva - OPM1.171019.026 - 8.11.6
 vendor/lib/hw/vulkan.msm8937.so
 vendor/lib64/hw/vulkan.msm8937.so
 
-# Keystore - from marmite - OPM5.171019.017 - UOS273C
+# Graphics firmware - from riva - OPM1.171019.026 - 8.11.6
+etc/firmware/a225p5_pm4.fw:vendor/firmware/a225p5_pm4.fw
+etc/firmware/a225_pfp.fw:vendor/firmware/a225_pfp.fw
+etc/firmware/a225_pm4.fw:vendor/firmware/a225_pm4.fw
+etc/firmware/a300_pfp.fw:vendor/firmware/a300_pfp.fw
+etc/firmware/a300_pm4.fw:vendor/firmware/a300_pm4.fw
+etc/firmware/a330_pfp.fw:vendor/firmware/a330_pfp.fw
+etc/firmware/a330_pm4.fw:vendor/firmware/a330_pm4.fw
+etc/firmware/a420_pfp.fw:vendor/firmware/a420_pfp.fw
+etc/firmware/a420_pm4.fw:vendor/firmware/a420_pm4.fw
+etc/firmware/a530_gpmu.fw2:vendor/firmware/a530_gpmu.fw2
+etc/firmware/a530_pfp.fw:vendor/firmware/a530_pfp.fw
+etc/firmware/a530_pm4.fw:vendor/firmware/a530_pm4.fw
+etc/firmware/a530v1_pfp.fw:vendor/firmware/a530v1_pfp.fw
+etc/firmware/a530v1_pm4.fw:vendor/firmware/a530v1_pm4.fw
+etc/firmware/a530v2_seq.fw2:vendor/firmware/a530v2_seq.fw2
+etc/firmware/a530v3_gpmu.fw2:vendor/firmware/a530v3_gpmu.fw2
+etc/firmware/a530v3_seq.fw2:vendor/firmware/a530v3_seq.fw2
+etc/firmware/a540_gpmu.fw2:vendor/firmware/a540_gpmu.fw2
+
+# Keystore - from riva - OPM1.171019.026 - 8.11.6
 vendor/lib/hw/keystore.msm8937.so
 vendor/lib64/hw/keystore.msm8937.so
 
@@ -313,7 +333,7 @@ vendor/lib/hw/sound_trigger.primary.msm8937.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 vendor/lib64/hw/sound_trigger.primary.msm8937.so
 
-# Media - from marmite - OPM5.171019.017 - UOS273C
+# Media - from riva - OPM1.171019.026 - 8.11.6
 vendor/lib/libI420colorconvert.so
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
@@ -409,6 +429,9 @@ vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # Postprocessing - from marmite - OPM5.171019.017 - UOS273C
+vendor/bin/mm-pp-dpps
+
+# Postprocessing - from riva - OPM1.171019.026 - 8.11.6
 etc/permissions/com.qti.snapdragon.sdk.display.xml
 framework/com.qti.snapdragon.sdk.display.jar
 lib/libsd_sdk_display.so:vendor/lib/libsd_sdk_display.so
@@ -422,7 +445,6 @@ lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 -vendor/app/colorservice/colorservice.apk
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-vendor/bin/mm-pp-dpps
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/lib64/libdisp-aba.so
@@ -582,7 +604,7 @@ vendor/lib64/lib-uceservice.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 
-# Sensors - from marmite - OPM5.171019.017 - UOS273C
+# Sensors - from riva - OPM1.171019.026 - 8.11.6
 vendor/bin/sensors.qcom
 vendor/lib/hw/activity_recognition.msm8937.so
 vendor/lib/libsensor1.so
