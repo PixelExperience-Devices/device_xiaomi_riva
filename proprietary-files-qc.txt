@@ -639,3 +639,6 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so
 vendor/bin/hw/android.hardware.drm@1.0-service.widevine
 vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
 vendor/lib/libwvhidl.so
+
+# Wi-Fi - from tissot - OPM1.171019.026 V9.6.4.0.ODHMIFE
+vendor/bin/wcnss_service
