@@ -182,11 +182,11 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_riva
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
-# Lineage Hardware
-JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
-
 # Hack for remove liblight
 $(shell rm -rf hardware/qcom/display-caf/msm8996/liblight)
+
+# Lineage Hardware
+JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
 
 # Tap2Wake
 TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
