@@ -158,8 +158,6 @@ private:
 
     void subscribe(const list<DataItemId>& l, IDataItemObserver* client, bool toRequestData);
 
-    void subscribe(const list<DataItemId>& l, IDataItemObserver* client, bool toRequestData);
-
     // Helpers
     void sendCachedDataItems(const unordered_set<DataItemId>& s, IDataItemObserver* to);
     bool updateCache(IDataItemCore* d);

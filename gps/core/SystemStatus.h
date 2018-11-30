@@ -500,21 +500,6 @@ public:
         }
         return *this;
     }
-    inline virtual SystemStatusItemBase& collate(SystemStatusItemBase& curInfo) {
-        uint64_t allTypes = (static_cast<SystemStatusNetworkInfo&>(curInfo)).mAllTypes;
-        if (mConnected) {
-            mAllTypes |= allTypes;
-        } else if (0 != mAllTypes) {
-            mAllTypes = (allTypes & (~mAllTypes));
-        } // else (mConnected == false && mAllTypes == 0)
-          // we keep mAllTypes as 0, which means no more connections.
-
-        if (nullptr != mSrcObjPtr) {
-            // this is critical, changing mAllTypes of the original obj
-            mSrcObjPtr->mAllTypes = mAllTypes;
-        }
-        return *this;
-    }
     inline void dump(void) override {
         LOC_LOGD("NetworkInfo: mAllTypes=%" PRIx64 " connected=%u mType=%x",
                  mAllTypes, mConnected, mType);

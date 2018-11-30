@@ -57,11 +57,8 @@ struct GnssInterface {
     void (*agpsDataConnFailed)(AGpsExtType agpsType);
     void (*getDebugReport)(GnssDebugReport& report);
     void (*updateConnectionStatus)(bool connected, int8_t type);
-<<<<<<< HEAD
-=======
     void (*odcpiInit)(const OdcpiRequestCallback& callback);
     void (*odcpiInject)(const Location& location);
->>>>>>> 9f923221... msm8953-common: update gps from LA.UM.7.6.r1-02500-89xx.0
 };
 
 struct FlpInterface {
