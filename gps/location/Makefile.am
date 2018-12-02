@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-AM_CFLAGS = \
-     $(LOCPLA_CFLAGS) \
-     $(GPSUTILS_CFLAGS) \
-     $(LOCHAL_CFLAGS) \
-     -I./ \
-     -I../utils \
-=======
 ACLOCAL_AMFLAGS = -I m4
 
 AM_CFLAGS = \
@@ -13,7 +5,6 @@ AM_CFLAGS = \
      -I../utils \
      $(LOCPLA_CFLAGS) \
      $(GPSUTILS_CFLAGS) \
->>>>>>> 9f923221... msm8953-common: update gps from LA.UM.7.6.r1-02500-89xx.0
      -std=c++11
 
 liblocation_api_la_SOURCES = \
@@ -22,17 +13,6 @@ liblocation_api_la_SOURCES = \
 
 if USE_GLIB
 liblocation_api_la_CFLAGS = -DUSE_GLIB $(AM_CFLAGS) @GLIB_CFLAGS@
-<<<<<<< HEAD
-liblocation_api_la_LDFLAGS = -lstdc++ -lpthread @GLIB_LIBS@ -shared -version-info 1:0:0
-liblocation_api_la_CPPFLAGS = -DUSE_GLIB $(AM_CFLAGS) $(AM_CPPFLAGS) @GLIB_CFLAGS@
-else
-liblocation_api_la_CFLAGS = $(AM_CFLAGS)
-liblocation_api_la_LDFLAGS = -lpthread -shared -version-info 1:0:0
-liblocation_api_la_CPPFLAGS = $(AM_CFLAGS) $(AM_CPPFLAGS)
-endif
-
-liblocation_api_la_LIBADD = -lstdc++ $(LOCPLA_LIBS) $(GPSUTILS_LIBS) $(LOCHAL_LIBS)
-=======
 liblocation_api_la_LDFLAGS = -lstdc++ -Wl,-z,defs -lpthread @GLIB_LIBS@ -shared -version-info 1:0:0
 liblocation_api_la_CPPFLAGS = -DUSE_GLIB $(AM_CFLAGS) $(AM_CPPFLAGS) @GLIB_CFLAGS@
 else
@@ -42,7 +22,6 @@ liblocation_api_la_CPPFLAGS = $(AM_CFLAGS) $(AM_CPPFLAGS)
 endif
 
 liblocation_api_la_LIBADD = -lstdc++ -ldl $(GPSUTILS_LIBS)
->>>>>>> 9f923221... msm8953-common: update gps from LA.UM.7.6.r1-02500-89xx.0
 
 library_include_HEADERS = \
     LocationAPI.h \
@@ -53,17 +32,7 @@ library_include_HEADERS = \
 lib_LTLIBRARIES = liblocation_api.la
 
 library_includedir = $(pkgincludedir)
-<<<<<<< HEAD
-#pkgconfigdir = $(libdir)/pkgconfig
-#pkgconfig_DATA = location-api.pc
-#EXTRA_DIST = $(pkgconfig_DATA)
-
-
-
-
-=======
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = location-api.pc
 EXTRA_DIST = $(pkgconfig_DATA)
->>>>>>> 9f923221... msm8953-common: update gps from LA.UM.7.6.r1-02500-89xx.0
