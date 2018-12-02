@@ -508,6 +508,8 @@ framework/QtiTelephonyServicelibrary.jar
 framework/qcrilhook.jar
 framework/qti-telephony-common.jar
 lib/android.hardware.secure_element@1.0.so
+lib/android.hardware.radio.config@1.0.so
+lib64/android.hardware.radio.config@1.0.so
 lib64/android.hardware.secure_element@1.0.so
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/netmgrd
