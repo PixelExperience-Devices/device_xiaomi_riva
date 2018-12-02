@@ -51,7 +51,7 @@ vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
 
-# Bluetooth - from tissot - OPM1.171019.026 V9.6.4.0.ODHMIFE
+# Bluetooth - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hci_qcomm_init
 vendor/bin/wcnss_filter
@@ -60,8 +60,8 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libbt-hidlclient.so
 
-# Bluetooth (shared dependencies) - from tissot - OPM1.171019.026 V9.6.4.0.ODHMIFE
-vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so
+# Bluetooth (shared dependencies) - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
+vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
 # CNE - from tissot - OPM1.171019.026 V9.6.4.0.ODHMIFE
 etc/cne/andsfCne.xml
@@ -154,13 +154,13 @@ vendor/lib/vendor.qti.hardware.qteeconnector@1.0_vendor.so
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so
 
-# FM - from tissot - OPM1.171019.026 V9.6.4.0.ODHMIFE
+# FM - from  daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 -lib/vendor.qti.hardware.fm@1.0.so
 -lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Gatekeeper - from marmite - OPM5.171019.017 - UOS273C
 vendor/lib/hw/gatekeeper.msm8937.so
@@ -382,7 +382,7 @@ vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libswvdec.so
 vendor/lib64/libvpplibrary.so
 
-# Modem - from marmite - OPM5.171019.017 - UOS273C
+# Modem - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 vendor/lib/libwms.so
 vendor/lib64/libwms.so
 
@@ -422,7 +422,7 @@ vendor/lib64/vendor.qti.hardware.iop@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.iop@2.0_vendor.so
 vendor/lib64/vendor.qti.hardware.perf@1.0_vendor.so
 
-# Peripheral manager - from tissot - OPM1.171019.026 V9.6.4.0.ODHMIFE
+# Peripheral manager - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
@@ -456,7 +456,7 @@ vendor/lib/vendor.display.color@1.0_vendor.so
 vendor/lib/vendor.display.postproc@1.0_vendor.so
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
 
-# QMI - from tissot - OPR1.170623.026.V9.5.4.0.ODHMIFA
+# QMI - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
 etc/permissions/qti_permissions.xml
 lib/libdiag_system.so
@@ -479,7 +479,6 @@ vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
-vendor/lib/libsmemlog.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
@@ -495,15 +494,16 @@ vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
-vendor/lib64/libsmemlog.so
 
-# Radio - from tissot - OPR1.170623.026.V9.5.4.0.ODHMIFA
+# Radio - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
 framework/QtiTelephonyServicelibrary.jar
 framework/qcrilhook.jar
 framework/qti-telephony-common.jar
+lib/android.hardware.secure_element@1.0.so
+lib64/android.hardware.secure_element@1.0.so
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/netmgrd
 vendor/bin/qti
@@ -514,19 +514,31 @@ vendor/etc/data/netmgr_config.xml
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
+vendor/lib/libnetmgr_common.so
+vendor/lib/libnetmgr_nr_fusion.so
+vendor/lib/libnetmgr_rmnet_ext.so
+vendor/lib/libnlnetmgr.so
+vendor/lib/libqrtr.so
+vendor/lib/libqsocket.so
 vendor/lib/libqcmaputils.so
-vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so
-vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so
-vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so
-vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so
-vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so
-vendor/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so
-vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so
-vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.radio.am@1.0.so
+vendor/lib/vendor.qti.hardware.radio.ims@1.0.so
+vendor/lib/vendor.qti.hardware.radio.lpa@1.0.so
+vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so
+vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0.so
+vendor/lib/vendor.qti.hardware.radio.uim@1.0.so
+vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so
+vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libnetmgr.so
+vendor/lib/libnetmgr_common.so
+vendor/lib/libnetmgr_nr_fusion.so
+vendor/lib/libnetmgr_rmnet_ext.so
+vendor/lib/libnlnetmgr.so
+vendor/lib/libqrtr.so
+vendor/lib/libqsocket.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-qmi-1.so
@@ -535,15 +547,15 @@ vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/librilqmiservices.so
 vendor/lib64/libsettings.so
 vendor/lib64/libsystem_health_mon.so
-vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.radio.lpa@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.radio.uim@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
+vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
+vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so
+vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so
+vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
+vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
+vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so
+vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
+vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
