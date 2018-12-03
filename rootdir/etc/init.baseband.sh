@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/vendor/bin/sh
 # Copyright (c) 2017, Lineage. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
