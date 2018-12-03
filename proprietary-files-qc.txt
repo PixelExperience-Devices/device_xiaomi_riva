@@ -506,7 +506,6 @@ etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
 framework/QtiTelephonyServicelibrary.jar
 framework/qcrilhook.jar
-framework/qti-telephony-common.jar
 lib/android.hardware.secure_element@1.0.so
 lib/android.hardware.radio.config@1.0.so
 lib64/android.hardware.radio.config@1.0.so
@@ -565,6 +564,9 @@ vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/radio/qcril_database/qcril.db
+
+# Radio - from tissot - OPM1.171019.026 V9.6.4.0.ODHMIFE
+framework/qti-telephony-common.jar
 
 # Radio - IMS - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 -priv-app/ims/ims.apk
