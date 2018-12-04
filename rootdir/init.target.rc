@@ -216,8 +216,8 @@ on boot
 
         # add a cpuset for the camera daemon
         # we want all cores for camera
-        mkdir /dev/cpuset/camera-daemon
-        write /dev/cpuset/camera-daemon/cpus 0-3
+        mkdir /dev/cpuset/camera-daemon 0750 cameraserver cameraserver
+        write /dev/cpuset/camera-daemon/cpus 0-7
         write /dev/cpuset/camera-daemon/mems 0
         chown system system /dev/cpuset/camera-daemon
         chown system system /dev/cpuset/camera-daemon/tasks
@@ -229,4 +229,3 @@ service ppd /vendor/bin/mm-pp-dpps
     group system graphics
     socket pps stream 0660 system system
     disabled
-
