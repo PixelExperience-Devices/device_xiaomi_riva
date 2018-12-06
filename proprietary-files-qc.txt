@@ -273,26 +273,24 @@ vendor/lib64/libmm-qdcm.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
 
-# Graphics (HDR) - from riva - OPM1.171019.026 - 8.11.6
+# Graphics (HDR) - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 vendor/lib/libhdr_tm.so
 vendor/lib64/libhdr_tm.so
 
-# Graphics (SDM) - from riva - OPM1.171019.026 - 8.11.6
+# Graphics (SDM) - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so
 lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so
 vendor/lib/libscalar.so
-
-# Graphics (SDM) - from payton leaked firmware
-vendor/lib/libsdm-color.so|418a070bc1e845f0268ffb2f627af8fcddc437f2
-vendor/lib/libsdm-diag.so|e0455e9dd0e2378a3f770eb914aa11e612d594eb
--vendor/lib/libsdm-disp-vndapis.so|31b8df32d8091ef0390352b118e59bbde3d4acc1
-vendor/lib/libsdmextension.so|65efe8438a4b6634e7bdfc656fe72e4b8db30ec6
-vendor/lib/libtinyxml2_1.so|20fea724b7a9f94530833cfdc841049104a0ffa3
-vendor/lib64/libsdm-color.so|5c8cda1e79cd46cd29e45d689017e24a440800b7
-vendor/lib64/libsdm-diag.so|25bab19a8c4453b3d20e3e1a71a0e8d3675b17b4
--vendor/lib64/libsdm-disp-vndapis.so|6b0ee25367d386ccc1b42ea941f1da439a48b3ec
-vendor/lib64/libsdmextension.so|616b323d407e002035849a8674f1b0efb3390725
-vendor/lib64/libtinyxml2_1.so|9d5179eda8ce70b9a4014b144f9d23d33509fddc
+vendor/lib/libsdm-color.so
+vendor/lib/libsdm-diag.so
+-vendor/lib/libsdm-disp-vndapis.so
+vendor/lib/libsdmextension.so
+vendor/lib/libtinyxml2_1.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-diag.so
+-vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtinyxml2_1.so
 
 # Graphics (adreno 308) - from riva - OPM1.171019.026 - 8.11.6
 vendor/lib/egl/eglsubAndroid.so
@@ -302,29 +300,29 @@ vendor/lib/libsc-a3xx.so
 vendor/lib64/libsc-a3xx.so
 vendor/lib64/libc2d30-a3xx.so
 
-# Graphics (Vulkan) - from riva - OPM1.171019.026 - 8.11.6
-vendor/lib/hw/vulkan.msm8937.so
-vendor/lib64/hw/vulkan.msm8937.so
+# Graphics (Vulkan) - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
+vendor/lib/hw/vulkan.msm8953.so:vendor/lib/hw/vulkan.msm8937.so
+vendor/lib64/hw/vulkan.msm8953.so:vendor/lib64/hw/vulkan.msm8937.so
 
-# Graphics firmware - from riva - OPM1.171019.026 - 8.11.6
-etc/firmware/a225p5_pm4.fw:vendor/firmware/a225p5_pm4.fw
-etc/firmware/a225_pfp.fw:vendor/firmware/a225_pfp.fw
-etc/firmware/a225_pm4.fw:vendor/firmware/a225_pm4.fw
-etc/firmware/a300_pfp.fw:vendor/firmware/a300_pfp.fw
-etc/firmware/a300_pm4.fw:vendor/firmware/a300_pm4.fw
-etc/firmware/a330_pfp.fw:vendor/firmware/a330_pfp.fw
-etc/firmware/a330_pm4.fw:vendor/firmware/a330_pm4.fw
-etc/firmware/a420_pfp.fw:vendor/firmware/a420_pfp.fw
-etc/firmware/a420_pm4.fw:vendor/firmware/a420_pm4.fw
-etc/firmware/a530_gpmu.fw2:vendor/firmware/a530_gpmu.fw2
-etc/firmware/a530_pfp.fw:vendor/firmware/a530_pfp.fw
-etc/firmware/a530_pm4.fw:vendor/firmware/a530_pm4.fw
-etc/firmware/a530v1_pfp.fw:vendor/firmware/a530v1_pfp.fw
-etc/firmware/a530v1_pm4.fw:vendor/firmware/a530v1_pm4.fw
-etc/firmware/a530v2_seq.fw2:vendor/firmware/a530v2_seq.fw2
-etc/firmware/a530v3_gpmu.fw2:vendor/firmware/a530v3_gpmu.fw2
-etc/firmware/a530v3_seq.fw2:vendor/firmware/a530v3_seq.fw2
-etc/firmware/a540_gpmu.fw2:vendor/firmware/a540_gpmu.fw2
+# Graphics firmware - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
+vendor/firmware/a225p5_pm4.fw
+vendor/firmware/a225_pfp.fw
+vendor/firmware/a225_pm4.fw
+vendor/firmware/a300_pfp.fw
+vendor/firmware/a300_pm4.fw
+vendor/firmware/a330_pfp.fw
+vendor/firmware/a330_pm4.fw
+vendor/firmware/a420_pfp.fw
+vendor/firmware/a420_pm4.fw
+vendor/firmware/a530_gpmu.fw2
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530_pm4.fw
+vendor/firmware/a530v1_pfp.fw
+vendor/firmware/a530v1_pm4.fw
+vendor/firmware/a530v2_seq.fw2
+vendor/firmware/a530v3_gpmu.fw2
+vendor/firmware/a530v3_seq.fw2
+vendor/firmware/a540_gpmu.fw2
 
 # Keystore - from riva - OPM1.171019.026 - 8.11.6
 vendor/lib/hw/keystore.msm8937.so
@@ -433,33 +431,33 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
-# Postprocessing - from marmite - OPM5.171019.017 - UOS273C
+# Postprocessing - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 vendor/bin/mm-pp-dpps
-
-# Postprocessing - from riva - OPM1.171019.026 - 8.11.6
 etc/permissions/com.qti.snapdragon.sdk.display.xml
 framework/com.qti.snapdragon.sdk.display.jar
-lib/libsd_sdk_display.so:vendor/lib/libsd_sdk_display.so
 lib/vendor.display.color@1.0.so
 lib/vendor.display.postproc@1.0.so
 lib/vendor.qti.hardware.qdutils_disp@1.0.so
-lib64/libsd_sdk_display.so:vendor/lib64/libsd_sdk_display.so
 lib64/vendor.display.color@1.0.so
 lib64/vendor.display.postproc@1.0.so
 lib64/vendor.qti.hardware.qdutils_disp@1.0.so
--vendor/app/colorservice/colorservice.apk
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/lib64/libdisp-aba.so
-vendor/lib64/vendor.display.color@1.0_vendor.so
-vendor/lib64/vendor.display.postproc@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
+vendor/lib64/vendor.display.color@1.0.so
+vendor/lib64/vendor.display.postproc@1.0.so
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib/libdisp-aba.so
-vendor/lib/vendor.display.color@1.0_vendor.so
-vendor/lib/vendor.display.postproc@1.0_vendor.so
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
+vendor/lib/vendor.display.color@1.0.so
+vendor/lib/vendor.display.postproc@1.0.so
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
+
+# Postprocessing - from riva - OPM1.171019.026 - 8.11.6
+-vendor/app/colorservice/colorservice.apk
+lib/libsd_sdk_display.so:vendor/lib/libsd_sdk_display.so
+lib64/libsd_sdk_display.so:vendor/lib64/libsd_sdk_display.so
 
 # QMI - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
@@ -657,25 +655,25 @@ vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/sensors.ssc.so
 
-# Thermal - from marmite - OPM5.171019.017 - UOS273C
+# Thermal - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 vendor/bin/thermal-engine
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
-# Time services - from marmite - OPM5.171019.017 - UOS273C
+# Time services - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 -vendor/lib/libtime_genoff.so
 -vendor/lib64/libtime_genoff.so
 
-# TUI - from marmite - OPM5.171019.017 - UOS273C
+# TUI - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 lib/vendor.qti.hardware.tui_comm@1.0.so
 lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Widevine DRM - from marmite - OPM5.171019.017 - UOS273C
 vendor/bin/hw/android.hardware.drm@1.0-service.widevine
