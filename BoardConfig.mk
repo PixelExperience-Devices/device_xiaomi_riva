@@ -179,9 +179,6 @@ DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 TARGET_INIT_VENDOR_LIB := libinit_riva
 TARGET_RECOVERY_DEVICE_MODULES := libinit_riva
 
-# HWUI
-HWUI_COMPILE_FOR_PERF := true
-
 # Hack for remove liblight
 $(shell rm -rf hardware/qcom/display-caf/msm8996/liblight)
 
