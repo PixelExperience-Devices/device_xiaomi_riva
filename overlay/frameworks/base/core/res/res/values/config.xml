@@ -348,4 +348,9 @@
 
     <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
     <bool name="config_swipe_up_gesture_setting_available">true</bool>
+
+    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
+         manually by the user. Off by default, since the expected haptic feedback may not be
+	 available on some devices. -->
+    <bool name="config_enableHapticTextHandle">true</bool>
 </resources>
