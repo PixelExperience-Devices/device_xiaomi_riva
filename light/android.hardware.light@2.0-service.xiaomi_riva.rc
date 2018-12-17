@@ -8,6 +8,10 @@ on init
     chown system system /sys/class/leds/green/led_time
     chown system system /sys/class/leds/blue/led_time
 
+    # Set Permissions For LED Colours
+    chown system:system /sys/class/leds/*/brightness
+    chown system:system /sys/class/leds/*/blink
+
 service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.xiaomi_riva
     interface android.hardware.light@2.0::ILight default
     class hal
