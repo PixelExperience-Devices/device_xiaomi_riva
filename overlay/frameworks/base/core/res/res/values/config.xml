@@ -46,7 +46,7 @@
          backlight values for LUX levels between these control points.
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>10</item>     <!-- twilight -->
+        <item>8</item>     <!-- twilight -->
         <item>50</item>     <!-- dim indoor -->
         <item>100</item>    <!-- home -->
         <item>200</item>    <!-- office --> 
@@ -65,10 +65,10 @@
          The brightness values must be between 0 and 255 and be non-decreasing.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>18</item>   <!-- 0-10 -->
-        <item>28</item>   <!-- 10-50 -->
-        <item>37</item>   <!-- 50-100 -->
-        <item>51</item>   <!-- 100-200 -->
+        <item>5</item>   <!-- 0-10 -->
+        <item>24</item>   <!-- 10-50 -->
+        <item>39</item>   <!-- 50-100 -->
+        <item>55</item>   <!-- 100-200 -->
         <item>71</item>   <!-- 200-400 -->
         <item>80</item>   <!-- 400-500 -->
         <item>96</item>   <!-- 500-800 -->
