@@ -280,7 +280,5 @@
 /dev/kmsg                                               0620   root       system
 
 # IR
-/dev/lirc0                0660   system     system
-/dev/peel_ir              0660   system     system
 /dev/spidev7.1            0660   system     system
 /dev/spidev6.1            0660   system     system
