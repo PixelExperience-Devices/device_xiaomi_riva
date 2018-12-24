@@ -56,6 +56,18 @@ char const*const GREEN_LED_FILE
 char const*const BLUE_LED_FILE
         = "/sys/class/leds/blue/brightness";
 
+char const*const WHITE_LED_FILE
+        = "/sys/class/leds/white/brightness";
+
+char const*const YELLOW_LED_FILE
+        = "/sys/class/leds/yellow/brightness";
+
+char const*const PURPLE_LED_FILE
+        = "/sys/class/leds/purple/brightness";
+
+char const*const CYAN_LED_FILE
+        = "/sys/class/leds/cyan/brightness";
+
 char const*const LCD_FILE
         = "/sys/class/leds/lcd-backlight/brightness";
 
@@ -70,6 +82,18 @@ char const*const GREEN_BLINK_FILE
 
 char const*const BLUE_BLINK_FILE
         = "/sys/class/leds/blue/blink";
+
+char const*const WHITE_BLINK_FILE
+        = "/sys/class/leds/white/blink";
+
+char const*const YELLOW_BLINK_FILE
+        = "/sys/class/leds/yellow/blink";
+
+char const*const PURPLE_BLINK_FILE
+        = "/sys/class/leds/purple/blink";
+
+char const*const CYAN_BLINK_FILE
+        = "/sys/class/leds/cyan/blink";
 
 char const*const PERSISTENCE_FILE
         = "/sys/class/graphics/fb0/msm_fb_persist_mode";
@@ -164,7 +188,7 @@ static int
 set_speaker_light_locked(struct light_device_t* dev,
         struct light_state_t const* state)
 {
-    int red, green, blue;
+    int red, green, blue, white, yellow, purple, cyan;
     int blink;
     int onMS, offMS;
     unsigned int colorRGB;
@@ -195,6 +219,11 @@ set_speaker_light_locked(struct light_device_t* dev,
     red = (colorRGB >> 16) & 0xFF;
     green = (colorRGB >> 8) & 0xFF;
     blue = colorRGB & 0xFF;
+    white = colorRGB & 0xFF;
+    yellow = colorRGB & 0xFF;
+    purple = colorRGB & 0xFF;
+    cyan = colorRGB & 0xFF;
+
 
     if (onMS > 0 && offMS > 0) {
         /*
@@ -224,10 +253,30 @@ set_speaker_light_locked(struct light_device_t* dev,
             if (write_int(BLUE_BLINK_FILE, blink))
                 write_int(BLUE_LED_FILE, 0);
         }
+        if (white) {
+            if (write_int(WHITE_BLINK_FILE, blink))
+                write_int(WHITE_LED_FILE, 0);
+        }
+        if (yellow) {
+            if (write_int(YELLOW_BLINK_FILE, blink))
+                write_int(YELLOW_LED_FILE, 0);
+        }
+        if (purple) {
+            if (write_int(PURPLE_BLINK_FILE, blink))
+                write_int(PURPLE_LED_FILE, 0);
+        }
+        if (cyan) {
+            if (write_int(CYAN_BLINK_FILE, blink))
+                write_int(CYAN_LED_FILE, 0);
+        }
     } else {
         write_int(RED_LED_FILE, red);
         write_int(GREEN_LED_FILE, green);
         write_int(BLUE_LED_FILE, blue);
+        write_int(WHITE_LED_FILE, white);
+        write_int(YELLOW_LED_FILE, yellow);
+        write_int(PURPLE_LED_FILE, purple);
+        write_int(CYAN_LED_FILE, cyan);
     }
 
     return 0;
