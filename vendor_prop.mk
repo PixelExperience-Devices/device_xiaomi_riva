@@ -73,6 +73,7 @@ dev.pm.dyn_samplingrate=1 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.sys.wfd.virtual=0 \
+persist.debug.wfd.enable=1 \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
 ro.qualcomm.svi=0 \
