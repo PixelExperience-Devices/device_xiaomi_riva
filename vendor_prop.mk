@@ -197,7 +197,6 @@ persist.rild.nitz_short_ons_3=""
 
 # Optimize
 PRODUCT_PROPERTY_OVERRIDES += \
-sys.use_fifo_ui=1 \
 ro.sys.fw.dex2oat_thread_count=4
 
 # Radio
