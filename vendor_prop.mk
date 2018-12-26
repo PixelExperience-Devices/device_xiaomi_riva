@@ -132,9 +132,9 @@ ro.min.fling_velocity=160 \
 ro.max.fling_velocity=20000
 
 # GPS
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.location.osnlp.package=com.google.android.gms \
-ro.location.osnlp.region.package=""
+#PRODUCT_PROPERTY_OVERRIDES += \
+#ro.location.osnlp.package=com.google.android.gms \
+#ro.location.osnlp.region.package=""
 
 #LKMD
 PRODUCT_PROPERTY_OVERRIDES += \
