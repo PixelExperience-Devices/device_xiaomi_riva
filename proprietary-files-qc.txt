@@ -138,11 +138,23 @@ vendor/lib64/libxml.so
 # Charger - from marmite - OPM5.171019.017 - UOS273C
 #vendor/bin/hvdcp_opti
 
-# DPM - from marmite - OPM5.171019.017 - UOS273C
+# DPM - daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
+bin/dpmd
+etc/dpm/dpm.conf
+etc/init/dpmd.rc
+etc/permissions/com.qti.dpmframework.xml
+etc/permissions/dpmapi.xml
+framework/com.qti.dpmframework.jar
+framework/dpmapi.jar
+framework/tcmclient.jar
+lib64/com.qualcomm.qti.dpm.api@1.0.so
+lib64/libdpmctmgr.so
+lib64/libdpmfdmgr.so
+lib64/libdpmframework.so
+lib64/libdpmtcm.so
+-priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
-vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so
-vendor/lib/libdpmqmihal.so
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
 # DRM - from marmite - OPM5.171019.017 - UOS273C
