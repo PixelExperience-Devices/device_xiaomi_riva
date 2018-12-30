@@ -119,7 +119,7 @@ vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so
 
 # Charger - from marmite - OPM5.171019.017 - UOS273C
-vendor/bin/hvdcp_opti
+#vendor/bin/hvdcp_opti
 
 # DPM - from marmite - OPM5.171019.017 - UOS273C
 vendor/bin/dpmQmiMgr
