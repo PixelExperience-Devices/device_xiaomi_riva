@@ -64,7 +64,7 @@ public final class Utils {
                 DOZE_ENABLED, 1) != 0;
     }
 
-    protected static boolean enableDoze(Context context, boolean enable) {
+    protected static boolean enableDoze(boolean enable, Context context) {
         return Settings.Secure.putInt(context.getContentResolver(),
                 DOZE_ENABLED, enable ? 1 : 0);
     }
@@ -75,31 +75,24 @@ public final class Utils {
                 new UserHandle(UserHandle.USER_CURRENT));
     }
 
-    protected static void enableGesture(Context context, String gesture, boolean enable) {
-        PreferenceManager.getDefaultSharedPreferences(context).edit()
-                .putBoolean(gesture, enable).apply();
-    }
-
-    protected static boolean isGestureEnabled(Context context, String gesture) {
+    protected static boolean pickUpEnabled(Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context)
-                .getBoolean(gesture, false);
+                .getBoolean(GESTURE_PICK_UP_KEY, false);
     }
 
-    protected static boolean isPickUpEnabled(Context context) {
-        return isGestureEnabled(context, GESTURE_PICK_UP_KEY);
+    protected static boolean handwaveGestureEnabled(Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context)
+                .getBoolean(GESTURE_HAND_WAVE_KEY, false);
     }
 
-    protected static boolean isHandwaveGestureEnabled(Context context) {
-        return isGestureEnabled(context, GESTURE_HAND_WAVE_KEY);
-    }
-
-    protected static boolean isPocketGestureEnabled(Context context) {
-        return isGestureEnabled(context, GESTURE_POCKET_KEY);
+    protected static boolean pocketGestureEnabled(Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context)
+                .getBoolean(GESTURE_POCKET_KEY, false);
     }
 
     protected static boolean sensorsEnabled(Context context) {
-        return isPickUpEnabled(context) || isHandwaveGestureEnabled(context)
-                || isPocketGestureEnabled(context);
+        return pickUpEnabled(context) || handwaveGestureEnabled(context)
+                || pocketGestureEnabled(context);
     }
 
     protected static Sensor getSensor(SensorManager sm, String type) {
