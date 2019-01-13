@@ -703,7 +703,7 @@ vendor/bin/hw/android.hardware.drm@1.0-service.widevine
 vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
 vendor/lib/libwvhidl.so
 
-# Wi-Fi - from tissot - OPM1.171019.026 V9.6.4.0.ODHMIFE
+# Wi-Fi - from tissot - PKQ1.180917.001 V10.0.3.0.PDHMIFK
 vendor/bin/wcnss_service
 
 # Wi-Fi Display
