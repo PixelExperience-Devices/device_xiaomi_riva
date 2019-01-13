@@ -26,6 +26,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.speaker.prot.enable=false \
     persist.vendor.bt.enable.splita2dp=false \
     persist.vendor.audio.hw.binder.size_kbyte=1024 \
+    persist.audio.dirac.speaker=true \
     ro.config.media_vol_steps=15 \
     ro.config.vc_call_vol_steps=7 \
     ro.vendor.audio.sdk.fluencetype=fluence \
