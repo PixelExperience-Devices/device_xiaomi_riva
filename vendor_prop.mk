@@ -28,7 +28,8 @@ vendor.voice.conc.fallbackpath=deep-buffer \
 vendor.voice.path.for.pcm.voip=true \
 vendor.audio.use.dts_eagle=true \
 use.dts_eagle=true \
-hpx_send_params=1
+hpx_send_params=1 \
+persist.audio.dirac.speaker=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
