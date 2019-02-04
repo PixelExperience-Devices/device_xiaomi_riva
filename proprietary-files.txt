@@ -1901,6 +1901,11 @@ vendor/firmware/cpp_firmware_v1_12_0.fw:vendor/firmware/cpp_firmware_v1_12_0.fw|
 vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.default.so|b2e014de968f65e013b4dae3fad67f16aa3b0a09
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.default.so|bed46204c8200d5f0ec1b37c14ecbc06f424db93
 
+# Dirac
+vendor/etc/diracmobile.config
+lib/libDiracAPI_SHARED.so:vendor/lib/libDiracAPI_SHARED.so
+lib/soundfx/libdirac.so:vendor/lib/soundfx/libdirac.so
+
 # Display calibration
 vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3b.xml
 vendor/etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3b.xml
