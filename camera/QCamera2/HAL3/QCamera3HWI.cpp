@@ -1221,7 +1221,7 @@ int32_t QCamera3HardwareInterface::getSensorOutputSize(cam_dimension_t &sensor_d
 void QCamera3HardwareInterface::enablePowerHint()
 {
     if (!mPowerHintEnabled) {
-        m_perfLock.powerHint(POWER_HINT_VIDEO_ENCODE, true);
+        m_perfLock.powerHint(PowerHint::VIDEO_ENCODE, true);
         mPowerHintEnabled = true;
     }
 }
@@ -1239,7 +1239,7 @@ void QCamera3HardwareInterface::enablePowerHint()
 void QCamera3HardwareInterface::disablePowerHint()
 {
     if (mPowerHintEnabled) {
-        m_perfLock.powerHint(POWER_HINT_VIDEO_ENCODE, false);
+        m_perfLock.powerHint(PowerHint::VIDEO_ENCODE, false);
         mPowerHintEnabled = false;
     }
 }
@@ -7502,8 +7502,8 @@ int QCamera3HardwareInterface::initStaticMetadata(uint32_t cameraId)
     staticInfo.update(ANDROID_SENSOR_INFO_WHITE_LEVEL,
             &gCamCapability[cameraId]->white_level, 1);
 
-    if(facingBack && gCamCapability[cameraId]->black_level_pattern[0] < 16) {
-        int32_t black_level_pattern_custom[BLACK_LEVEL_PATTERN_CNT] = {32,32,32,32};
+    if(facingBack && gCamCapability[cameraId]->black_level_pattern[0] < 32) {
+        int32_t black_level_pattern_custom[BLACK_LEVEL_PATTERN_CNT] = {64,64,64,64};
         staticInfo.update(ANDROID_SENSOR_BLACK_LEVEL_PATTERN,
                 black_level_pattern_custom, BLACK_LEVEL_PATTERN_CNT);
     } else {
