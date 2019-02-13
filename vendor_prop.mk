@@ -277,10 +277,3 @@ ro.config.zram=true
 # Create Swap disk, if below sys-prop enabled & also if device has lower (< 1 GB) RAM
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.config.swap=true
-
-# ADB
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.adb.secure=0 \
-persist.service.debuggable=1 \
-persist.service.adb.enable=1 \
-persist.sys.usb.config=mtp,adb
