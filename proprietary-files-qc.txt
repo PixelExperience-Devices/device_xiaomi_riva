@@ -51,6 +51,12 @@ vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
 
+# AptX - from marlin - OPM1.171019.011 release
+system/lib/libaptXHD_encoder.so
+system/lib/libaptX_encoder.so
+system/lib64/libaptXHD_encoder.so
+system/lib64/libaptX_encoder.so
+
 # Bluetooth - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hci_qcomm_init
