@@ -242,66 +242,6 @@ vendor/lib64/vendor.qti.gnss@1.2.so
 vendor/lib64/vendor.qti.gnss@2.0.so
 vendor/lib64/vendor.qti.gnss@2.1.so
 
-# Graphics - from riva - OPM1.171019.026 - 8.11.6
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libESXEGL_adreno.so
-vendor/lib/egl/libESXGLESv1_CM_adreno.so
-vendor/lib/egl/libESXGLESv2_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libQTapGLES.so
-vendor/lib/egl/libRBEGL_adreno.so
-vendor/lib/egl/libRBGLESv1_CM_adreno.so
-vendor/lib/egl/libRBGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/libC2D2.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
-vendor/lib/libRSDriver_adreno.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libbccQTI.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libllvm-qgl.so
-vendor/lib/libmm-disp-apis.so
-vendor/lib/libmm-hdcpmgr.so
-vendor/lib/libmm-qdcm.so
-vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libESXEGL_adreno.so
-vendor/lib64/egl/libESXGLESv1_CM_adreno.so
-vendor/lib64/egl/libESXGLESv2_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/egl/libRBEGL_adreno.so
-vendor/lib64/egl/libRBGLESv1_CM_adreno.so
-vendor/lib64/egl/libRBGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libRSDriver_adreno.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libbccQTI.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libllvm-qgl.so
-vendor/lib64/libmm-disp-apis.so
-vendor/lib64/libmm-hdcpmgr.so
-vendor/lib64/libmm-qdcm.so
-vendor/lib64/librs_adreno.so
-vendor/lib64/librs_adreno_sha1.so
-
 # Graphics (HDR) - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 vendor/lib/libhdr_tm.so
 vendor/lib64/libhdr_tm.so
@@ -322,41 +262,13 @@ vendor/lib64/libsdm-disp-apis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
-# Graphics (adreno 308) - from riva - OPM1.171019.026 - 8.11.6
-vendor/lib/egl/eglsubAndroid.so
-vendor/lib64/egl/eglsubAndroid.so
-vendor/lib/libc2d30-a3xx.so
-vendor/lib/libsc-a3xx.so
-vendor/lib64/libsc-a3xx.so
-vendor/lib64/libc2d30-a3xx.so
-
 # Graphics (Vulkan) - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 vendor/lib/hw/vulkan.msm8953.so:vendor/lib/hw/vulkan.msm8937.so
 vendor/lib64/hw/vulkan.msm8953.so:vendor/lib64/hw/vulkan.msm8937.so
 
 # Graphics firmware - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
-vendor/firmware/a225p5_pm4.fw
-vendor/firmware/a225_pfp.fw
-vendor/firmware/a225_pm4.fw
-vendor/firmware/a300_pfp.fw
-vendor/firmware/a300_pm4.fw
-vendor/firmware/a330_pfp.fw
-vendor/firmware/a330_pm4.fw
-vendor/firmware/a420_pfp.fw
-vendor/firmware/a420_pm4.fw
-vendor/firmware/a530_gpmu.fw2
 vendor/firmware/a530_pfp.fw
 vendor/firmware/a530_pm4.fw
-vendor/firmware/a530v1_pfp.fw
-vendor/firmware/a530v1_pm4.fw
-vendor/firmware/a530v2_seq.fw2
-vendor/firmware/a530v3_gpmu.fw2
-vendor/firmware/a530v3_seq.fw2
-vendor/firmware/a540_gpmu.fw2
-
-# Keystore - from riva - OPM1.171019.026 - 8.11.6
-vendor/lib/hw/keystore.msm8937.so
-vendor/lib64/hw/keystore.msm8937.so
 
 # Listen - from marmite - OPM5.171019.017 - UOS273C
 vendor/lib/libadpcmdec.so
@@ -365,55 +277,6 @@ vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib/hw/sound_trigger.primary.msm8937.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 vendor/lib64/hw/sound_trigger.primary.msm8937.so
-
-# Media - from riva - OPM1.171019.026 - 8.11.6
-vendor/lib/libI420colorconvert.so
-vendor/lib/libAlacSwDec.so
-vendor/lib/libApeSwDec.so
-vendor/lib/libFlacSwDec.so
-vendor/lib/libMpeg4SwEncoder.so
-vendor/lib/libmmosal_proprietary.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAlacDecSw.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libOmxVpp.so
-vendor/lib/libOmxWmaDec.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libswvdec.so
-vendor/lib/libvpplibrary.so
-vendor/lib/libvqzip.so
-vendor/lib64/libI420colorconvert.so
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
-vendor/lib64/libFlacSwDec.so
-vendor/lib64/libMpeg4SwEncoder.so
-vendor/lib64/libmmosal_proprietary.so
-vendor/lib64/libOmxAacDec.so
-vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAlacDecSw.so
-vendor/lib64/libOmxAmrDec.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
-vendor/lib64/libOmxApeDecSw.so
-vendor/lib64/libOmxEvrcDec.so
-vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libOmxSwVdec.so
-vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib64/libOmxVpp.so
-vendor/lib64/libOmxWmaDec.so
-vendor/lib64/libmm-color-convertor.so
-vendor/lib64/libswvdec.so
-vendor/lib64/libvpplibrary.so
 
 # Modem - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 vendor/lib/libwms.so
@@ -483,11 +346,6 @@ vendor/lib/libdisp-aba.so
 vendor/lib/vendor.display.color@1.0.so
 vendor/lib/vendor.display.postproc@1.0.so
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-
-# Postprocessing - from riva - OPM1.171019.026 - 8.11.6
--vendor/app/colorservice/colorservice.apk
-lib/libsd_sdk_display.so:vendor/lib/libsd_sdk_display.so
-lib64/libsd_sdk_display.so:vendor/lib64/libsd_sdk_display.so
 
 # QMI - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
@@ -673,17 +531,6 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
-
-# Sensors - from riva - OPM1.171019.026 - 8.11.6
-vendor/bin/sensors.qcom
-vendor/lib/hw/activity_recognition.msm8937.so
-vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so
-vendor/lib/sensors.ssc.so
-vendor/lib64/hw/activity_recognition.msm8937.so
-vendor/lib64/libsensor1.so
-vendor/lib64/libsensor_reg.so
-vendor/lib64/sensors.ssc.so
 
 # Thermal - from daisy - PKQ1.180917.001 V10.0.1.0.PDLMIFJ
 vendor/bin/thermal-engine
