@@ -306,17 +306,18 @@ vendor/lib64/librs_adreno_sha1.so
 vendor/lib/libhdr_tm.so
 vendor/lib64/libhdr_tm.so
 
-# Graphics (SDM) - from B2N_sprout - PPR1.180610.011
-vendor/lib/libqseed3.so
+# Graphics (SDM) - LA.UM.7.5.r1-03700-8x96.0
+vendor/lib/libscalar.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
+vendor/lib/libsdm-disp-apis.so
 -vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libsdmextension.so
 vendor/lib/libtinyxml2_1.so
-vendor/lib64/libqseed3.so
 vendor/lib64/libscalar.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
+vendor/lib64/libsdm-disp-apis.so
 -vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
