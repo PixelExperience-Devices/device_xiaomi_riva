@@ -1966,9 +1966,9 @@ vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libmmcamera_isp_template.so
 vendor/lib/libmmcamera_isp_wb40.so
 
-# Consumer IR - from MIUI Stable - V9.2.6.0.NCCMIEK
-lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.default.so
-lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.default.so
+# Consumer IR - from MIUI 10 - OPM1.171019.026
+vendor/lib/hw/consumerir.default.so
+vendor/lib64/hw/consumerir.default.so
 
 # Display calibration - from MIUI Stable - V9.2.6.0.NCCMIEK
 etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3b.xml:vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3b.xml
