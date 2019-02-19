@@ -381,4 +381,7 @@
 
     <!-- Component name for default assistant on this device -->
     <string name="config_defaultAssistantComponentName">com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService</string>
+    
+    <!-- Whether to allow sending active app broadcast -->
+    <bool name="config_allowActivePackageBroadcast">true</bool>
 </resources>
