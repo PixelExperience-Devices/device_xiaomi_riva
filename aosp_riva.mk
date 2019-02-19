@@ -26,6 +26,7 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_DENSITY := xhdpi
 TARGET_BOOT_ANIMATION_RES := 720
 CUSTOM_BUILD_TYPE=OFFICIAL
+TARGET_USE_OLD_SOUND_PICKER := true
 
 # Inherit from riva device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
