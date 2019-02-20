@@ -193,8 +193,9 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 
-# Hack for remove liblight
-$(shell rm -rf hardware/qcom/display-caf-msm8996/liblight)
+# Hack for remove stuffs
+$(shell rm -rf hardware/qcom/display-caf/msm8996/liblight)
+$(shell rm -rf vendor/qcom/common)
 
 # Tap2Wake
 TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"

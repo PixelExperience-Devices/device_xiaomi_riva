@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_DENSITY := xhdpi
 TARGET_BOOT_ANIMATION_RES := 720
@@ -30,6 +30,9 @@ TARGET_USE_OLD_SOUND_PICKER := true
 
 # Inherit from riva device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
+
+# Inherit from our common CAF device tree.
+include device/qcom/common/common.mk
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := riva
