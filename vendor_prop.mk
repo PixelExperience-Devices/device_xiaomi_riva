@@ -158,6 +158,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.usb.config.extra=none
 
+# VSync for CPU rendered app
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    debug.cpurend.vsync=false
+
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
