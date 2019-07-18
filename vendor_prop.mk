@@ -128,6 +128,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0 \
     mm.enable.qcom_parser=4176895 \
     media.stagefright.audio.sink=280 \
     vendor.vidc.disable.split.mode=1 \
