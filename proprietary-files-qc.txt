@@ -22,6 +22,10 @@ vendor/lib64/libacdbrtac.so|c44ff9b9aa63e34ca1b77a5f0bfb6a5e50585048
 vendor/lib64/libadiertac.so|aeaf6f057d26acf342609c714213e1c9b3409774
 vendor/lib64/libaudcal.so|96c43cbe0ac304ea128def709d7f3ea99db7f260
 
+# Bluetooth (aptX) - from crosshatch - QP1A.190711.020
+lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
+
 # Bluetooth - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|9178856dc8651b499d1b155825b6115a486ee05e
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
