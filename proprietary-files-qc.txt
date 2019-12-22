@@ -147,31 +147,31 @@ vendor/lib64/libxtadapter.so|d404e8c5c6e14a556926ba772ca99aa51cbd6a36
 vendor/lib64/libxtwifi_ulp_adaptor.so|58b20fbdbb500add11784acce0808c7198c96c34
 vendor/lib64/vendor.qti.gnss@1.0.so|90b465adc4542f16fbdd935d0592df73d778909b
 
-# Graphics - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
-vendor/lib/libadreno_utils.so|f6fd2917558a00aef9196ee815fd8f9b33b91ab5
+# Graphics - from ZC520KL - PKQ1.181203.001
+vendor/lib/libadreno_utils.so|bdf956793cdbfd7c672de756f66acdf9143d429a
 vendor/lib/libbccQTI.so|2876950b59585cf4ed60141c87b5f42bc84184aa
 vendor/lib/libC2D2.so|1a555aae15adb00b0cc0b43e14136956c0cd2c87
 vendor/lib/libc2d30_bltlib.so|55f4a13ce639973c9acf6cda4f682b531766b11b
-vendor/lib/libCB.so|c0d96d6a9608e03856a296a06f4316418fd3a376
+vendor/lib/libCB.so|e28da00518a87eb697e3eca208bb660ad6f805fa
 vendor/lib/libgsl.so|b9e2b05df65e005aa2670f096f15bbb530d4ef24
-vendor/lib/libllvm-glnext.so|587d59054979d43957fd7aeaa0571f29720f372e
-vendor/lib/libllvm-qcom.so|7f089c8d2088492e6f6a52368bb030315c71df97
+vendor/lib/libllvm-glnext.so|9bd24cfd0ab5ef5539b9efc30dde5f6a72910b56
+vendor/lib/libllvm-qcom.so|126b0742133bb52fc1c466ebe403d025e0bd0f9e
 vendor/lib/libOpenCL.so|74840ef50111c3232a7fcef79bf78e7fa516a237
-vendor/lib/librs_adreno_sha1.so|065a538f25d41713501c568a2d7ef1561c8e3bb7
+vendor/lib/librs_adreno_sha1.so|51c4dba3fac1d2b4566164fd7ae887e9306d8e49
 vendor/lib/librs_adreno.so|12b4c0d4174c108e27a4e09fe3e2b5ac860693a2
-vendor/lib/libRSDriver_adreno.so|26de2b456a064d9d3ea68b8ceacf26f4a866c067
-vendor/lib64/libadreno_utils.so|a87e0e67b0c33f505ecbc48087fd37b00c952f48
+vendor/lib/libRSDriver_adreno.so|01b706208858f4fb5ea2d394a0ba8aa055c10892
+vendor/lib64/libadreno_utils.so|1fb348676a8d4cacd814be7b838db770ac531eb0
 vendor/lib64/libbccQTI.so|dad14c838bec4dd153a09f2b3d01e01875377ba6
-vendor/lib64/libC2D2.so|6e48cf41fe85fdedd8648873b8451c2e264eed57
-vendor/lib64/libc2d30_bltlib.so|2029bc033c176ca48bcd2027d1ebd25d7cac4d53
-vendor/lib64/libCB.so|c34b7c049fbd54f8fcab77f47031f3438b676966
-vendor/lib64/libgsl.so|877e8bc5062951ef450533fd9f07a530a771e93c
-vendor/lib64/libllvm-glnext.so|ad571ceb8f1fd505ee29d4c320423f46e836b611
-vendor/lib64/libllvm-qcom.so|12cc1b6c00622c88156f2054a90c37733d77a7a6
-vendor/lib64/libOpenCL.so|6400a952fbc2d2e5d9aed56ae1aa4f1380dcdd73
-vendor/lib64/librs_adreno_sha1.so|35c26aecafd9a12d84ff6f89b1891699c19eb88f
-vendor/lib64/librs_adreno.so|5b853ae3692fc3d8cf7c5b63d45320533c194cde
-vendor/lib64/libRSDriver_adreno.so|eb72d1cabfb31ee3362c9832a40b265e42858dc9
+vendor/lib64/libC2D2.so|626dbf68c04ac30f481fac056a13bfffdb82bca5
+vendor/lib64/libc2d30_bltlib.so|ce25536a4021eec4d0066bcd2ed0476f81a4d2af
+vendor/lib64/libCB.so|6a145e65b1a68f738b80965b400ff78ef54a0a42
+vendor/lib64/libgsl.so|5bd1113d92c162c31c28d4f5f0022d3d43646a56
+vendor/lib64/libllvm-glnext.so|7343b541da116a513e3483350fec1042a80473a2
+vendor/lib64/libllvm-qcom.so|eea91b69ab005ee5581356a81e3d283a80184150
+vendor/lib64/libOpenCL.so|f96d024f607fff7e4e8ef5619ecf56ffe8bbdfbd
+vendor/lib64/librs_adreno_sha1.so|887a1779b5e9f38b59f0df74586b9679695eadc6
+vendor/lib64/librs_adreno.so|ee083a9b3bb3726d0dd35649da90504b00b267ed
+vendor/lib64/libRSDriver_adreno.so|88f556d2ba84278aa0ead094c32e6c636cad82bd
 
 # Graphics (HDR) - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
 vendor/lib/libhdr_tm.so|8060a5d9ed0283c7b89716165ba8af4b86ef0210
