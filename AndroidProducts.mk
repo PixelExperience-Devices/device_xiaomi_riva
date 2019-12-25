@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_riva.mk
+    $(LOCAL_DIR)/aosp_riva.mk
 
 COMMON_LUNCH_CHOICES := \
-     lineage_riva-user \
-     lineage_riva-userdebug
+    aosp_riva-user \
+    aosp_riva-userdebug
