@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2019 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,12 +30,12 @@ import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
-import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
+import androidx.preference.ListPreference;
 
 import org.lineageos.settings.R;
 
@@ -57,10 +57,11 @@ public class DiracSettingsFragment extends PreferenceFragment implements
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.dirac_settings);
-        final ActionBar actionBar = getActivity().getActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
 
         mDiracUtils = new DiracUtils(getContext());
+
+        final ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         boolean enhancerEnabled = mDiracUtils.isDiracEnabled();
 
@@ -120,23 +121,23 @@ public class DiracSettingsFragment extends PreferenceFragment implements
     public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
         mDiracUtils.setEnabled(isChecked);
         mTextView.setText(getString(isChecked ? R.string.switch_bar_on : R.string.switch_bar_off));
-        if (isChecked){
+        if (isChecked) {
             mSwitchBar.setEnabled(false);
             mHandler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    try{
+                    try {
                         mSwitchBar.setEnabled(true);
                         setEnabled(isChecked);
-                    }catch(Exception ignored){
+                    } catch(Exception ignored) {
                     }
                 }
             }, 1020);
-        }else{
+        } else {
             setEnabled(isChecked);
         }
     }
-    
+
     private void setEnabled(boolean enabled){
         mSwitchBar.setActivated(enabled);
         mHeadsetType.setEnabled(enabled);

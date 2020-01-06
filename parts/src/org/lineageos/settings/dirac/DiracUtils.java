@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2019 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,9 +31,17 @@ import java.util.List;
 public final class DiracUtils {
 
     protected DiracSound mDiracSound;
+    private static DiracUtils mInstance;
     private MediaSessionManager mMediaSessionManager;
     private Handler mHandler = new Handler();
     private Context mContext;
+
+    public static DiracUtils getInstance() {
+        if (mInstance == null) {
+            throw new IllegalArgumentException("Trying to get instance without initializing!");
+        }
+        return mInstance;
+    }
 
     public DiracUtils(final Context context) {
         mContext = context;
@@ -41,10 +49,11 @@ public final class DiracUtils {
         mDiracSound = new DiracSound(0, 0);
     }
 
-    public void onBootCompleted(){
+    public void onBootCompleted() {
         setEnabled(mDiracSound.getMusic() == 1);
         mDiracSound.setHeadsetType(mDiracSound.getHeadsetType());
         setLevel(getLevel());
+        mInstance = this;
     }
 
     protected void refreshPlaybackIfNecessary(){
