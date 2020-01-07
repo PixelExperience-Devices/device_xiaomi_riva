@@ -24,7 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.speaker=false \
     persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.speaker.prot.enable=false \
-    persist.vendor.bt.enable.splita2dp=false \
+    persist.vendor.btstack.enable.splita2dp=false \
     persist.vendor.audio.hw.binder.size_kbyte=1024 \
     persist.audio.dirac.speaker=true \
     ro.config.media_vol_steps=15 \
@@ -140,13 +140,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
     debug.stagefright.omx_default_rank=0 \
-    mm.enable.qcom_parser=4176895 \
     media.stagefright.audio.sink=280 \
+    vendor.mm.enable.qcom_parser=4176895 \
     vendor.vidc.disable.split.mode=1 \
     vendor.vidc.enc.disable_bframes=1 \
     vendor.vidc.enc.disable_pframes=1 \
     vendor.vidc.enc.disable.pq=true \
     vendor.vidc.enc.narrow.searchrange=1 \
+    vendor.video.disable.ubwc=1 \
     media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Memory optimizations
