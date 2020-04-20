@@ -64,6 +64,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android,com.snapchat.android \
     vidc.enc.dcvs.extra-buff-count=2
 
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true
+
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=1
