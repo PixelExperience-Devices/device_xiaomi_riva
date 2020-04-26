@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
- *               2017-2018 The LineageOS Project
+ *               2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,24 +23,22 @@ import android.content.pm.PackageManager;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
+
 import androidx.preference.PreferenceManager;
 
 import static android.provider.Settings.Secure.DOZE_ENABLED;
 
-public final class Utils {
-
-    private static final String TAG = "DozeUtils";
-    private static final boolean DEBUG = false;
-
-    private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
+public final class DozeUtils {
 
     protected static final String CATEG_PROX_SENSOR = "proximity_sensor";
-
     protected static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
     protected static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
     protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
+    private static final String TAG = "DozeUtils";
+    private static final boolean DEBUG = false;
+    private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
 
-    protected static void startService(Context context) {
+    public static void startService(Context context) {
         if (DEBUG) Log.d(TAG, "Starting service");
         context.startServiceAsUser(new Intent(context, DozeService.class),
                 UserHandle.CURRENT);
@@ -71,7 +69,7 @@ public final class Utils {
         }
     }
 
-    protected static boolean isDozeEnabled(Context context) {
+    public static boolean isDozeEnabled(Context context) {
         return Settings.Secure.getInt(context.getContentResolver(),
                 DOZE_ENABLED, 1) != 0;
     }
@@ -85,11 +83,6 @@ public final class Utils {
         if (DEBUG) Log.d(TAG, "Launch doze pulse");
         context.sendBroadcastAsUser(new Intent(DOZE_INTENT),
                 new UserHandle(UserHandle.USER_CURRENT));
-    }
-
-    protected static void enableGesture(Context context, String gesture, boolean enable) {
-        PreferenceManager.getDefaultSharedPreferences(context).edit()
-                .putBoolean(gesture, enable).apply();
     }
 
     protected static boolean isGestureEnabled(Context context, String gesture) {
@@ -109,7 +102,7 @@ public final class Utils {
         return isGestureEnabled(context, GESTURE_POCKET_KEY);
     }
 
-    protected static boolean sensorsEnabled(Context context) {
+    public static boolean sensorsEnabled(Context context) {
         return isPickUpEnabled(context) || isHandwaveGestureEnabled(context)
                 || isPocketGestureEnabled(context);
     }
