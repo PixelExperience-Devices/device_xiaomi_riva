@@ -1,1 +1,3 @@
+persist.audio.dirac                 u:object_r:dirac_prop:s0
 persist.graphics.vulkan.disable     u:object_r:graphics_vulkan_prop:s0
+wifi.active.interface               u:object_r:wifi_prop:s0

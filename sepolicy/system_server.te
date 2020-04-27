@@ -4,3 +4,4 @@ allow system_server lirc_device:chr_file rw_file_perms;
 allow system_server spidev_device:chr_file rw_file_perms;
 allow system_server sysfs_rtc:file r_file_perms;
 allow system_server touch_sysfs:file r_file_perms;
+get_prop(system_server, persist_camera_prop);
