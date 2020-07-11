@@ -22,6 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common AOSP stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 720
 
