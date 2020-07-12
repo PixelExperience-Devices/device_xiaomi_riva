@@ -6,9 +6,9 @@
     "branch":      "ten-riva"
   },
   {
-    "remote":      "github",
-    "repository":  "PixelExperience-Devices/vendor_xiaomi",
-    "target_path": "vendor/xiaomi",
+    "remote":      "pixel-devices-bitbucket",
+    "repository":  "vendor_xiaomi_riva",
+    "target_path": "vendor/xiaomi/riva",
     "branch":      "ten"
   }
 ]
