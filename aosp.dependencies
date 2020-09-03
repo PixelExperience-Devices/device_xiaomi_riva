@@ -6,7 +6,7 @@
     "branch":      "ten-riva"
   },
   {
-    "remote":      "pixel-devices-bitbucket",
+    "remote":      "pixel-devices-blobs",
     "repository":  "vendor_xiaomi_riva",
     "target_path": "vendor/xiaomi/riva",
     "branch":      "ten"
