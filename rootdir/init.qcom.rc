@@ -160,8 +160,8 @@ on post-fs-data
     # Create directory for TZ Apps
     mkdir /data/misc/qsee 0770 system system
 
-    #Create folder for mm-qcamera-daemon
-    mkdir /data/misc/camera 0770 camera camera
+    # Create folder for our hex edited mm-qcamera-daemon and camera blobs
+    mkdir /data/vendor/qcam 0770 camera camera
 
     mkdir /data/vendor/ramdump 0771 root system
     mkdir /data/vendor/bluetooth 0770 bluetooth bluetooth
@@ -245,6 +245,7 @@ on property:sys.boot_completed=1
 on property:vold.decrypt=trigger_restart_framework
     restart vendor.camera-provider-2-4
     restart vendor.audio-hal-2-0
+    start wcnss-service
 
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
