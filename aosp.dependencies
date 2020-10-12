@@ -10,5 +10,11 @@
     "repository":  "vendor_xiaomi_riva",
     "target_path": "vendor/xiaomi/riva",
     "branch":      "ten"
+  },
+  {
+    "remote":      "github",
+    "repository":  "kdrag0n/proton-clang",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-proton",
+    "branch":      "master"
   }
 ]
