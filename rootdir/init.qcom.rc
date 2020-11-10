@@ -44,6 +44,9 @@ on init
 
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
+    # ZRAM setup
+    write /sys/block/zram0/max_comp_streams 8
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
