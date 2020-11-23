@@ -137,8 +137,8 @@ vendor/bin/loc_launcher|1565f326b4fd46d6dfacd0e0804254611892d019
 vendor/bin/lowi-server|fcbb7d072bf0c760f905b3ca532a2a27816c0dde
 vendor/bin/xtra-daemon|e961ac3ee4a98a43ea4e9e86a290a246a4599798
 vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc|8e0b0596a13b8d653e6f5415c41d8a53bb12b73a
-vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml|8d7eafd68db9bbe7ec7a5c4d547f026869766081
-vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml|9b2f6691d6c224bcb9ab9a0d57adfb9e52f1b53e
+-vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml|8d7eafd68db9bbe7ec7a5c4d547f026869766081
+-vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml|9b2f6691d6c224bcb9ab9a0d57adfb9e52f1b53e
 vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so|7713792ae0fd186cd635a73c85489e46a4b78da8
 vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so|a4d7ba739a737d2eac1ccb58eb75ea95b8cdcde5
 vendor/lib64/libbatching.so|1a4715a19253d5317dd36f85b603c076ac175984
