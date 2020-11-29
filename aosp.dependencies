@@ -3,13 +3,13 @@
     "remote":      "github",
     "repository":  "PixelExperience-Devices/kernel_xiaomi_msm8917",
     "target_path": "kernel/xiaomi/msm8917",
-    "branch":      "ten_4.9_riva"
+    "branch":      "eleven"
   },
   {
     "remote":      "pixel-devices-blobs",
     "repository":  "vendor_xiaomi_riva",
     "target_path": "vendor/xiaomi/riva",
-    "branch":      "ten"
+    "branch":      "eleven"
   },
   {
     "remote":      "github",
