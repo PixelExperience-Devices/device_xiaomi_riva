@@ -9,3 +9,5 @@ allow qti_init_shell vendor_radio_data_file:dir w_dir_perms;
 allow qti_init_shell vendor_radio_data_file:file create_file_perms;
 allow qti_init_shell configfs:dir w_dir_perms;
 allow qti_init_shell configfs:file create_file_perms;
+
+dontaudit qti_init_shell self:capability { dac_override dac_read_search };

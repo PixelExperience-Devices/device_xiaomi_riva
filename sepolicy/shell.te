@@ -1,0 +1,3 @@
+allow shell adbd_prop:file { open getattr };
+allow shell adsprpc_prop:file { open getattr };
+allow shell apexd_prop:file { open getattr };

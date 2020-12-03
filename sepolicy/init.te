@@ -1,3 +1,5 @@
 allow init sysfs_devices_system_cpu:dir r_dir_perms;
 allow init sysfs_leds:lnk_file read;
 allow init firmware_file:filesystem getattr;
+allow init socket_device:sock_file { unlink setattr create };
+allow init proc:file setattr;
