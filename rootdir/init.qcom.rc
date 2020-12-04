@@ -399,3 +399,4 @@ service vendor.contexthub-hal-1-0 /vendor/bin/hw/android.hardware.contexthub@1.0
 
 on property:dev.bootcomplete=1
     swapon_all /vendor/etc/fstab.qcom
+    restart ril-daemon
